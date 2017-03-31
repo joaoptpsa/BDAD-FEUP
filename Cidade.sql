@@ -245,3 +245,15 @@ insert into Cidade (id, nome, idPais) values (160, 'Shanghai', 48);
   insert into Cidade (id, nome, idPais) values (243, 'Jaipur', 105);
   insert into Cidade (id, nome, idPais) values (244, 'Xuzhou', 48);
   insert into Cidade (id, nome, idPais) values (245, 'Wenzhou', 48);
+
+  insert into Cidade (id, nome, idPais) values (246, 'Liverpool', 77);
+  insert into Cidade (id, nome, idPais) values (247, 'Stoke', 77);
+  insert into Cidade (id, nome, idPais) values (248, 'Hull', 77);
+  insert into Cidade (id, nome, idPais) values (249, 'Leicester', 77);
+  insert into Cidade (id, nome, idPais) values (250, 'Manchester', 77);
+  insert into Cidade (id, nome, idPais) values (251, 'Middlesbrough', 77);
+  insert into Cidade (id, nome, idPais) values (252, 'Southampton', 77);
+  insert into Cidade (id, nome, idPais) values (253, 'Sunderland', 77);
+  insert into Cidade (id, nome, idPais) values (254, 'West Bromwich', 77);
+  insert into Cidade (id, nome, idPais) values (255, 'Burnley', 77);
+  insert into Cidade (id, nome, idPais) values (256, 'Bournemouth', 77);

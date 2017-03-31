@@ -414,24 +414,24 @@ insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (414, 'Barton', '1991-09-20', 155, 69, 154);
 
 
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (415, 'Eddie Howe', '1970-10-29', 200, 74, 223);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (416, 'Arsène Wenger', '1952-08-07', 208, 97, 118);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (417, 'Sean Dyche', '1951-01-01', 205, 87, 172);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (418, 'Antonio Conte', '1951-12-23', 155, 97, 119);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (419, 'Sam Allardyce', '1966-05-02', 171, 99, 239);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (420, 'Ronald Koeman', '1975-03-24', 171, 74, 176);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (421, 'Marco Silva', '1954-02-28', 207, 85, 238);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (422, 'Claudio Ranieri', '1965-08-20', 209, 60, 236);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (423, 'Jürgen Klopp', '1976-07-24', 208, 72, 180);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (424, 'Josep Guardiola', '1962-10-08', 162, 78, 23);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (425, 'José Mourinho', '1975-04-03', 184, 60, 90);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (426, 'Aitor Karanka', '1978-05-25', 193, 74, 189);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (427, 'Claude Puel', '1963-03-23', 179, 68, 123);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (428, 'Mark Hughes', '1952-10-27', 158, 76, 192);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (429, 'David Moyes', '1970-08-15', 169, 68, 31);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (430, 'Mauricio Pochettino', '1966-05-01', 177, 72, 242);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (415, 'Jürgen Klopp', '1970-10-29', 200, 74, 223);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (416, 'Ronald Koeman', '1952-08-07', 208, 97, 118);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (417, 'Slaven Bilic', '1951-01-01', 205, 87, 172);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (418, 'Marco Silva', '1951-12-23', 155, 97, 119);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (419, 'Claudio Ranieri', '1966-05-02', 171, 99, 239);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (420, 'José Mourinho', '1975-03-24', 171, 74, 176);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (421, 'Aitor Karanka', '1954-02-28', 207, 85, 238);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (422, 'Sam Allardyce', '1965-08-20', 209, 60, 236);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (423, 'Eddie Howe', '1976-07-24', 208, 72, 180);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (424, 'Mark Hughes', '1962-10-08', 162, 78, 23);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (425, 'David Moyes', '1975-04-03', 184, 60, 90);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (426, 'Antonio Conte', '1978-05-25', 193, 74, 189);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (427, 'Arsène Wenger', '1963-03-23', 179, 68, 123);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (428, 'Josep Guardiola', '1952-10-27', 158, 76, 192);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (429, 'Claude Puel', '1970-08-15', 169, 68, 31);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (430, 'Sean Dyche', '1966-05-01', 177, 72, 242);
   insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (431, 'Tony Pulis', '1964-03-14', 166, 89, 144);
-  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (432, 'Slaven Bilic', '1964-09-17', 205, 83, 186);
+  insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (432, 'Mauricio Pochettino', '1964-09-17', 205, 83, 186);
 
 
     insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (433, 'Arthur Morrison', '1971-06-24', 150, 104, 79);
