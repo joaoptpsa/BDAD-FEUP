@@ -1,0 +1,9 @@
+insert into Arbitro (idPessoa) values (541);
+insert into Arbitro (idPessoa) values (542);
+insert into Arbitro (idPessoa) values (543);
+insert into Arbitro (idPessoa) values (544);
+insert into Arbitro (idPessoa) values (545);
+insert into Arbitro (idPessoa) values (546);
+insert into Arbitro (idPessoa) values (547);
+insert into Arbitro (idPessoa) values (548);
+insert into Arbitro (idPessoa) values (549);
