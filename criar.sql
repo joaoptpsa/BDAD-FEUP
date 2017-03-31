@@ -154,7 +154,7 @@ CREATE TABLE Equipa (
 CREATE TABLE Participou (
 	idEquipa 			INTEGER		NOT NULL,
 	idEpoca  			INTEGER		NOT NULL,
-	classificacao		INTEGER		CHECK (classificacao>0),
+	classificacao		INTEGER		CHECK (classificacao>0 & classificacao<=18),
 		PRIMARY KEY (idEquipa, idEpoca),
 		FOREIGN KEY (idEquipa) REFERENCES Equipa,
 		FOREIGN KEY (idEpoca) REFERENCES Epoca
@@ -165,7 +165,9 @@ CREATE TABLE Estadio (
 	nome 			TEXT		NOT NULL UNIQUE,
 	dataAbertura 	REAL		NOT NULL, 
 	morada 			TEXT		NOT NULL,
-	lotacao 		INTEGER		NOT NULL
+	lotacao 		INTEGER		NOT NULL,
+	idCidade 		INTEGER		NOT NULL,
+		FOREIGN KEY (idCidade) REFERENCES Cidade
 );
 
 CREATE TABLE Pais (
