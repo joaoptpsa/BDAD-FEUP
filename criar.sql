@@ -174,8 +174,8 @@ CREATE TABLE Pais (
 CREATE TABLE Cidade (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT		NOT NULL,
-	nomePais		TEXT		NOT NULL,
-		FOREIGN KEY (nomePais) REFERENCES Pais
+	idPais			INTEGER		NOT NULL,
+		FOREIGN KEY (idPais) REFERENCES Pais
 );
 
 CREATE TABLE Golo (
