@@ -11,14 +11,18 @@ PRAGMA foreign_keys = ON;
 DROP TABLE IF EXISTS Epoca;
 DROP TABLE IF EXISTS Jornada;
 DROP TABLE IF EXISTS Jogo;
+DROP TABLE IF EXISTS Convocado;
 DROP TABLE IF EXISTS Pessoa;
 DROP TABLE IF EXISTS Jogador;
 DROP TABLE IF EXISTS Staff;
 DROP TABLE IF EXISTS Arbitro;
 DROP TABLE IF EXISTS Contrato;
+DROP TABLE IF EXISTS ContratoStaff;
+DROP TABLE IF EXISTS ContratoJogador;
 DROP TABLE IF EXISTS Funcao;
 DROP TABLE IF EXISTS Equipamento;
 DROP TABLE IF EXISTS Equipa;
+DROP TABLE IF EXISTS Participou;
 DROP TABLE IF EXISTS Estadio;
 DROP TABLE IF EXISTS Pais;
 DROP TABLE IF EXISTS Cidade;
@@ -29,14 +33,14 @@ DROP TABLE IF EXISTS Vermelho;
 
 CREATE TABLE Epoca (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio REAL, -- para guardar o numero de dias 
-	dataFim REAL -- para guardar o numero de dias 
+	dataInicio 		REAL		NOT NULL, -- para guardar o numero de dias 
+	dataFim 		REAL		NOT NULL -- para guardar o numero de dias 
 );
 
 CREATE TABLE Jornada (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio REAL, 
-	dataFim REAL
+	dataInicio 		REAL		NOT NULL, 
+	dataFim 		REAL		NOT NULL
 );
 
 CREATE TABLE Jogo (
@@ -56,80 +60,151 @@ CREATE TABLE Jogo (
 		FOREIGN KEY (idJornada) REFERENCES Jornada
 );
 
+CREATE TABLE Convocado (
+	idJogador 			INTEGER		NOT NULL,
+	idJogo  			INTEGER		NOT NULL,
+	minutoEntrada		INTEGER		CHECK ( minutoEntrada >= 0 | minutoEntrada IS NULL),
+	minutoSaida			INTEGER		CHECK ( minutoSaida >= minutoEntrada | minutoEntrada IS NULL),
+	PRIMARY KEY (idJogador, idJogo),
+		FOREIGN KEY (idJogador) REFERENCES Jogador,
+		FOREIGN KEY (idJogo) REFERENCES Jogo
+);
+
 CREATE TABLE Pessoa (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT 		NOT NULL,
 	dataNascimento 	REAL		NOT NULL, 
 	altura 			INTEGER		CHECK(altura>0), -- cm
-	peso 			INTEGER		CHECK(peso>0)--kg
+	peso 			INTEGER		CHECK(peso>0),--kg
+	cidadeNasc		TEXT		NOT NULL,
+		FOREIGN KEY (cidadeNasc) REFERENCES Cidade
 );
 
+
+--Contrato
 CREATE TABLE Jogador (
 	idPessoa		INTEGER		NOT NULL,
-	posicaoPref TEXT,
-	pePref TEXT,
+	posicaoPref 	TEXT		,
+	pePref			TEXT		,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa
+
 );
 
 CREATE TABLE Staff (
-	idPessoa		INTEGER		NOT NULL,
+	idPessoa		INTEGER		PRIMARY KEY,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa
 );
 
 CREATE TABLE Arbitro (
-	idPessoa		INTEGER		NOT NULL,
+	idPessoa		INTEGER		PRIMARY KEY,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa
 );
 
 CREATE TABLE Contrato (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio REAL, 
-	dataFim REAL
+	dataInicio 		REAL		NOT NULL, 
+	dataFim 		REAL		NOT NULL
+);
+
+CREATE TABLE ContratoStaff (
+	idContrato		INTEGER		PRIMARY KEY,
+	idStaff			INTEGER		NOT NULL,
+	idEquipa 		INTEGER		NOT NULL,
+	idFuncao		INTEGER		NOT NULL,
+		FOREIGN KEY (idContrato) REFERENCES Contrato,
+		FOREIGN KEY (idStaff) REFERENCES Staff,
+		FOREIGN KEY (idEquipa) REFERENCES Equipa,
+		FOREIGN KEY (idFuncao) REFERENCES Funcao
+);
+
+CREATE TABLE ContratoJogador (
+	idContrato		INTEGER		PRIMARY KEY,
+	idJogador		INTEGER		NOT NULL,
+	idEquipa 		INTEGER		NOT NULL,
+		FOREIGN KEY (idContrato) REFERENCES Contrato,
+		FOREIGN KEY (idJogador) REFERENCES Jogador,
+		FOREIGN KEY (idEquipa) REFERENCES Equipa
 );
 
 CREATE TABLE Funcao (
 	id 				INTEGER 	PRIMARY KEY,
-	nome TEXT
+	nome 			TEXT		NOT NULL UNIQUE
 );
 
 CREATE TABLE Equipamento (
 	id 				INTEGER 	PRIMARY KEY,
-	corCamisola TEXT,
-	corCalcoes TEXT
+	corCamisola 	TEXT		NOT NULL,
+	corCalcoes 		TEXT		NOT NULL,
+	idEquipa 		INTEGER		NOT NULL,
+	idEpoca			INTEGER		NOT NULL,
+		FOREIGN KEY (idEquipa) REFERENCES Equipa,
+		FOREIGN KEY (idEpoca) REFERENCES Epoca
 );
 
 CREATE TABLE Equipa (
 	id 				INTEGER 	PRIMARY KEY,
-	nome TEXT,
-	dataFundacao REAL 
+	nome 			TEXT		NOT NULL,
+	dataFundacao 	REAL		NOT NULL,
+	idEstadio		INTEGER		NOT NULL,
+		FOREIGN KEY (idEstadio) REFERENCES Estadio 
+);
+
+CREATE TABLE Participou (
+	idEquipa 			INTEGER		NOT NULL,
+	idEpoca  			INTEGER		NOT NULL,
+	classificacao		INTEGER		CHECK (classificacao>0),
+		PRIMARY KEY (idEquipa, idEpoca),
+		FOREIGN KEY (idEquipa) REFERENCES Equipa,
+		FOREIGN KEY (idEpoca) REFERENCES Epoca
 );
 
 CREATE TABLE Estadio (
 	id 				INTEGER 	PRIMARY KEY,
-	nome TEXT,
-	dataAbertura REAL, 
-	morada TEXT,
-	lotacao INTEGER
+	nome 			TEXT		NOT NULL UNIQUE,
+	dataAbertura 	REAL		NOT NULL, 
+	morada 			TEXT		NOT NULL,
+	lotacao 		INTEGER		NOT NULL
 );
 
 CREATE TABLE Pais (
-	id 				INTEGER 	PRIMARY KEY,
-	nome TEXT
+	id 				INTEGER		PRIMARY KEY,
+	nome 			TEXT		NOT NULL UNIQUE
 );
 
 CREATE TABLE Cidade (
 	id 				INTEGER 	PRIMARY KEY,
-	nome TEXT
+	nome 			TEXT		NOT NULL,
+	nomePais		TEXT		NOT NULL,
+		FOREIGN KEY (nomePais) REFERENCES Pais
 );
 
 CREATE TABLE Golo (
-	minuto INTEGER
+	minuto			INTEGER		NOT NULL,
+	idEquipa 		INTEGER		NOT NULL,
+	idJogador		INTEGER		NOT NULL,
+	idJogo 			INTEGER		NOT NULL,
+		FOREIGN KEY (idEquipa) REFERENCES Equipa,
+		FOREIGN KEY (idJogador) REFERENCES Jogador,
+		FOREIGN KEY (idJogo) REFERENCES Jogo
 );
 
 CREATE TABLE Amarelo (
-	minuto INTEGER
+	minuto			INTEGER		NOT NULL,
+	idEquipa 		INTEGER		NOT NULL,
+	idJogador		INTEGER		NOT NULL,
+	idJogo 			INTEGER		NOT NULL,
+		FOREIGN KEY (idEquipa) REFERENCES Equipa,
+		FOREIGN KEY (idJogador) REFERENCES Jogador,
+		FOREIGN KEY (idJogo) REFERENCES Jogo
 );
 
+
 CREATE TABLE Vermelho (
-	minuto INTEGER
+	minuto			INTEGER		NOT NULL,
+	idEquipa 		INTEGER		NOT NULL,
+	idJogador		INTEGER		NOT NULL,
+	idJogo 			INTEGER		NOT NULL,
+		FOREIGN KEY (idEquipa) REFERENCES Equipa,
+		FOREIGN KEY (idJogador) REFERENCES Jogador,
+		FOREIGN KEY (idJogo) REFERENCES Jogo
 );
