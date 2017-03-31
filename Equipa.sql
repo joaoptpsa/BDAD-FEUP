@@ -1,0 +1,18 @@
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (1, 'Liverpool ', 1901, 1);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (2, 'Stoke ', 1891, 2);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (3, 'Everton ', 1895, 3);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (4, 'Hull City ', 1935, 4);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (5, 'Leicester City ', 1928, 5);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (6, 'Man Utd ', 1920, 6);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (7, 'West Ham United ', 1930, 7);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (8, 'Middlesbrough ', 1931, 8);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (9, 'Crystal Palace ', 1911, 9);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (10, 'Southampton ', 1893, 10);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (11, 'Sunderland ', 1890, 11);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (12, 'Chelsea ', 1931, 12);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (13, 'Arsenal ', 1935, 13);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (14, 'Man City ', 1904, 14);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (15, 'West Brom ', 1919, 15);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (16, 'Burnley ', 1932, 16);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (17, 'Bournemouth ', 1916, 17);
+insert into Equipa (id, nome, dataFundacao, idEstadio) values (18, 'Tottenham', 1924, 18);

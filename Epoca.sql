@@ -1,1 +1,1 @@
-insert into Epoca (id, dataInicio, dataFim) values (1, '13/08/2016', '03/04/2017');
+insert into Epoca (id, dataInicio, dataFim) values (1, '2016-08-13', '2017-04-03');
