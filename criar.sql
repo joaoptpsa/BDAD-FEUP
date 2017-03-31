@@ -40,7 +40,9 @@ CREATE TABLE Epoca (
 CREATE TABLE Jornada (
 	id 				INTEGER 	PRIMARY KEY,
 	dataInicio 		REAL		NOT NULL, 
-	dataFim 		REAL		NOT NULL
+	dataFim 		REAL		NOT NULL,
+	idEpoca			INTEGER		NOT NULL,
+		FOREIGN KEY (idEpoca) REFERENCES Epoca
 );
 
 CREATE TABLE Jogo (
@@ -76,8 +78,8 @@ CREATE TABLE Pessoa (
 	dataNascimento 	REAL		NOT NULL, 
 	altura 			INTEGER		CHECK(altura>0), -- cm
 	peso 			INTEGER		CHECK(peso>0),--kg
-	cidadeNasc		TEXT		NOT NULL,
-		FOREIGN KEY (cidadeNasc) REFERENCES Cidade
+	idCidadeNasc	INTEGER		NOT NULL,
+		FOREIGN KEY (idCidadeNasc) REFERENCES Cidade
 );
 
 
