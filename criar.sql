@@ -76,8 +76,8 @@ CREATE TABLE Pessoa (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT 		NOT NULL,
 	dataNascimento 	REAL		NOT NULL, 
-	altura 			INTEGER		CHECK(altura>0), -- cm
-	peso 			INTEGER		CHECK(peso>0),--kg
+	altura 			INTEGER		CHECK(altura>0 | altura IS NULL), -- cm
+	peso 			INTEGER		CHECK(peso>0 | peso IS NULL),--kg
 	idCidadeNasc	INTEGER		NOT NULL,
 		FOREIGN KEY (idCidadeNasc) REFERENCES Cidade
 );
@@ -182,7 +182,8 @@ CREATE TABLE Cidade (
 		FOREIGN KEY (idPais) REFERENCES Pais
 );
 
-CREATE TABLE Golo (
+CREATE TABLE Evento (
+	id 				INTEGER		PRIMARY KEY,
 	minuto			INTEGER		NOT NULL,
 	idEquipa 		INTEGER		NOT NULL,
 	idJogador		INTEGER		NOT NULL,
@@ -190,25 +191,20 @@ CREATE TABLE Golo (
 		FOREIGN KEY (idEquipa) REFERENCES Equipa,
 		FOREIGN KEY (idJogador) REFERENCES Jogador,
 		FOREIGN KEY (idJogo) REFERENCES Jogo
-);
+)
+
+CREATE TABLE Golo (
+	idEvento		INTEGER		PRIMARY KEY,
+		FOREIGN KEY (idEvento) REFERENCES Evento
+)
 
 CREATE TABLE Amarelo (
-	minuto			INTEGER		NOT NULL,
-	idEquipa 		INTEGER		NOT NULL,
-	idJogador		INTEGER		NOT NULL,
-	idJogo 			INTEGER		NOT NULL,
-		FOREIGN KEY (idEquipa) REFERENCES Equipa,
-		FOREIGN KEY (idJogador) REFERENCES Jogador,
-		FOREIGN KEY (idJogo) REFERENCES Jogo
+	idEvento		INTEGER		PRIMARY KEY,
+		FOREIGN KEY (idEvento) REFERENCES Evento
 );
 
 
 CREATE TABLE Vermelho (
-	minuto			INTEGER		NOT NULL,
-	idEquipa 		INTEGER		NOT NULL,
-	idJogador		INTEGER		NOT NULL,
-	idJogo 			INTEGER		NOT NULL,
-		FOREIGN KEY (idEquipa) REFERENCES Equipa,
-		FOREIGN KEY (idJogador) REFERENCES Jogador,
-		FOREIGN KEY (idJogo) REFERENCES Jogo
+	idEvento		INTEGER		PRIMARY KEY,
+		FOREIGN KEY (idEvento) REFERENCES Evento
 );
