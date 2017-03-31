@@ -137,7 +137,7 @@ insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (137, 'Trippier', '05/08/1996', 205, 97, 12);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (138, 'Masuaku', '21/07/1990', 186, 87, 85);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (139, 'Debuchy', '05/03/1992', 157, 73, 203);
-insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (140, 'Jagielka', '27/04/1984', 152, 95, 49);
+insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (140, 'Éder', '27/04/1984', 152, 95, 49);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (141, 'Mawson', '08/11/1999', 157, 69, 33);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (142, 'Wimmer', '15/06/1992', 178, 69, 151);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (143, 'Holebas', '13/01/1987', 185, 70, 150);
@@ -541,8 +541,8 @@ insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values
   insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (539, 'Steve Hicks', '13/08/1981', 159, 79, 199);
   insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (540, 'Carolyn Nguyen', '15/05/1963', 155, 74, 222);
 
-    insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (541, 'Timothy Brooks', '06/11/1963', 173, 65, 155);
-    insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (542, 'Carl Brooks', '05/05/1965', 190, 92, 23);
+    insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (541, 'Pedro Proença', '06/11/1963', 173, 65, 155);
+    insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (542, 'Carlos Xistra', '05/05/1965', 190, 92, 23);
     insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (543, 'Ann Ford', '13/10/1971', 188, 96, 83);
     insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (544, 'Alice Schmidt', '07/12/1967', 191, 87, 177);
     insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (545, 'Lillian Campbell', '27/05/1968', 160, 93, 208);
