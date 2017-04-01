@@ -49,8 +49,8 @@ CREATE TABLE Jornada (
 CREATE TABLE Jogo (
 	id 				INTEGER 	PRIMARY KEY,
 	data 			REAL		NOT NULL,
-	golosCasa 		INTEGER		CHECK(golosCasa>=0),
-	golosFora 		INTEGER		CHECK(golosFora>=0),
+	golosCasa 		INTEGER		CHECK(golosCasa>=0 AND golosCasa IS NOT NULL),
+	golosFora 		INTEGER		CHECK(golosFora>=0 AND golosFora IS NOT NULL),
 	idEquipaCasa	INTEGER		NOT NULL,
 	idEquipaFora	INTEGER		NOT NULL,
 	idEstadio		INTEGER		NOT NULL,
@@ -152,7 +152,7 @@ CREATE TABLE Equipa (
 CREATE TABLE Participou (
 	idEquipa 			INTEGER		NOT NULL,
 	idEpoca  			INTEGER		NOT NULL,
-	classificacao		INTEGER		CHECK (classificacao>0 & classificacao<=18),
+	classificacao		INTEGER		CHECK ((classificacao>0 AND classificacao<=18) OR classificacao IS NOT NULL),
 		PRIMARY KEY (idEquipa, idEpoca),
 		FOREIGN KEY (idEquipa) REFERENCES Equipa,
 		FOREIGN KEY (idEpoca) REFERENCES Epoca
