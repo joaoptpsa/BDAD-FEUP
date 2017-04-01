@@ -34,13 +34,13 @@ DROP TABLE IF EXISTS Vermelho;
 
 CREATE TABLE Epoca (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio 		REAL		NOT NULL, -- para guardar o numero de dias 
-	dataFim 		REAL		NOT NULL -- para guardar o numero de dias 
+	dataInicio 		REAL		NOT NULL, -- para guardar o numero de dias
+	dataFim 		REAL		NOT NULL -- para guardar o numero de dias
 );
 
 CREATE TABLE Jornada (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio 		REAL		NOT NULL, 
+	dataInicio 		REAL		NOT NULL,
 	dataFim 		REAL		NOT NULL,
 	idEpoca			INTEGER		NOT NULL,
 		FOREIGN KEY (idEpoca) REFERENCES Epoca
@@ -67,7 +67,7 @@ CREATE TABLE Convocado (
 	idJogador 			INTEGER		NOT NULL,
 	idJogo  			INTEGER		NOT NULL,
 	minutoEntrada		INTEGER		CHECK (minutoEntrada IS NULL | minutoEntrada >= 0),
-	minutoSaida			INTEGER		CHECK ((minutoEntrada IS NULL & minutoSaida IS NULL) | minutoSaida >= minutoEntrada),
+	minutoSaida			INTEGER		CHECK ((minutoEntrada IS NULL & minutoSaida IS NULL) | minutoSaida >= minutoEntrada | (minutoEntrada =='0' & minutoSaida IS NULL)),
 	PRIMARY KEY (idJogador, idJogo),
 		FOREIGN KEY (idJogador) REFERENCES Jogador,
 		FOREIGN KEY (idJogo) REFERENCES Jogo
@@ -76,7 +76,7 @@ CREATE TABLE Convocado (
 CREATE TABLE Pessoa (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT 		NOT NULL,
-	dataNascimento 	REAL		NOT NULL, 
+	dataNascimento 	REAL		NOT NULL,
 	altura 			INTEGER		CHECK(altura>0), -- cm
 	peso 			INTEGER		CHECK(peso>0),--kg
 	idCidadeNasc	INTEGER		NOT NULL,
@@ -102,7 +102,7 @@ CREATE TABLE Arbitro (
 
 CREATE TABLE Contrato (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio 		REAL		NOT NULL, 
+	dataInicio 		REAL		NOT NULL,
 	dataFim 		REAL		NOT NULL
 );
 
@@ -146,7 +146,7 @@ CREATE TABLE Equipa (
 	nome 			TEXT		NOT NULL,
 	dataFundacao 	REAL		NOT NULL,
 	idEstadio		INTEGER		NOT NULL,
-		FOREIGN KEY (idEstadio) REFERENCES Estadio 
+		FOREIGN KEY (idEstadio) REFERENCES Estadio
 );
 
 CREATE TABLE Participou (
@@ -161,7 +161,7 @@ CREATE TABLE Participou (
 CREATE TABLE Estadio (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT		NOT NULL UNIQUE,
-	dataAbertura 	REAL		NOT NULL, 
+	dataAbertura 	REAL		NOT NULL,
 	morada 			TEXT		NOT NULL,
 	lotacao 		INTEGER		NOT NULL,
 	idCidade 		INTEGER		NOT NULL,
