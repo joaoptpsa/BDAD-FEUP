@@ -11,7 +11,7 @@ insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (1
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (11, 'Stadium of Light', 1997, 'Sunderland', 49000,253);
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (12, 'Stamford Bridge', 1876, 'London', 41837,183);
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (13, 'The Emirates', 2006, 'London', 60338,183);
-insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (14, 'The Etihad', 2003, 'Manchester', 47805,250;
+insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (14, 'The Etihad', 2003, 'Manchester', 47805,250);
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (15, 'The Hawthorns', 1900, 'West Bromwich', 27000,254);
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (16, 'Turf Moor', 1883, 'Burnley', 21940,255);
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (17, 'Vitality Stadium', 1910, 'Bournemouth', 12000,256);
