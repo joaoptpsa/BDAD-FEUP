@@ -66,7 +66,7 @@ CREATE TABLE Jogo (
 CREATE TABLE Convocado (
 	idJogador 			INTEGER		NOT NULL,
 	idJogo  			INTEGER		NOT NULL,
-	minutoEntrada		INTEGER		CHECK (minutoEntrada IS NULL | minutoEntrada >= 0),
+	minutoEntrada		INTEGER		CHECK (minutoEntrada >= 0),
 	minutoSaida			INTEGER		CHECK ((minutoEntrada IS NULL & minutoSaida IS NULL) | minutoSaida >= minutoEntrada | (minutoEntrada =='0' & minutoSaida IS NULL)),
 	PRIMARY KEY (idJogador, idJogo),
 		FOREIGN KEY (idJogador) REFERENCES Jogador,
