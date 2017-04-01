@@ -86,12 +86,12 @@ CREATE TABLE Jogador (
 	idPessoa		INTEGER		NOT NULL,
 	posicaoPref 	TEXT		,
 	pePref			TEXT		,
-		FOREIGN KEY (idPessoa) REFERENCES Pessoa,
+		FOREIGN KEY (idPessoa) REFERENCES Pessoa
 );
 
 CREATE TABLE Staff (
 	idPessoa		INTEGER		PRIMARY KEY,
-		FOREIGN KEY (idPessoa) REFERENCES Pessoa,
+		FOREIGN KEY (idPessoa) REFERENCES Pessoa
 );
 
 CREATE TABLE Arbitro (
@@ -188,12 +188,12 @@ CREATE TABLE Evento (
 		FOREIGN KEY (idEquipa) REFERENCES Equipa,
 		FOREIGN KEY (idJogador) REFERENCES Jogador,
 		FOREIGN KEY (idJogo) REFERENCES Jogo
-)
+);
 
 CREATE TABLE Golo (
 	idEvento		INTEGER		PRIMARY KEY,
 		FOREIGN KEY (idEvento) REFERENCES Evento
-)
+);
 
 CREATE TABLE Amarelo (
 	idEvento		INTEGER		PRIMARY KEY,
