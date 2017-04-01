@@ -84,7 +84,7 @@ CREATE TABLE Pessoa (
 );
 
 CREATE TABLE Jogador (
-	idPessoa		INTEGER		NOT NULL,
+	idPessoa		INTEGER		PRIMARY KEY,
 	posicaoPref 	TEXT		,
 	pePref			TEXT		,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa
