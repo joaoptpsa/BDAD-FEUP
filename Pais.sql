@@ -1,4 +1,4 @@
-INSERT INTO Pais (id, nome) VALUES (1, 'Andorra');
+insert into Pais (id, nome) VALUES (1, 'Andorra');
 insert into Pais (id, nome) values (2, 'United Arab Emirates');
 insert into Pais (id, nome) values (3, 'Afghanistan');
 insert into Pais (id, nome) values (4, 'Antigua and Barbuda');
@@ -6,7 +6,7 @@ insert into Pais (id, nome) values (5, 'Anguilla');
 insert into Pais (id, nome) values (6, 'Albania');
 insert into Pais (id, nome) values (7, 'Armenia');
 insert into Pais (id, nome) values (8, 'Angola');
-insert into Pais (id, nome) values (9, 'Antarctica');
+insert into Pais (id, nome) values (9, 'Antartica');
 insert into Pais (id, nome) values (10, 'Argentina');
 insert into Pais (id, nome) values (11, 'American Samoa');
 insert into Pais (id, nome) values (12, 'Austria');

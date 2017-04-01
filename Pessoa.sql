@@ -1,7 +1,7 @@
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (1, 'Courtois', '1993-11-28', 201, 60, 176);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (2, 'Lloris', '1984-09-06', 207, 84, 149);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (3, 'Cech', '1995-06-12', 176, 93, 131);
-insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (4, 'de Gea', '1992-03-30', 187, 81, 158);
+insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (4, 'David de Gea', '1992-03-30', 187, 81, 158);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (5, 'Heaton', '1991-05-24', 205, 98, 133);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (6, 'Bravo', '1991-06-14', 178, 91, 32);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (7, 'Forster', '1981-10-22', 196, 66, 60);
