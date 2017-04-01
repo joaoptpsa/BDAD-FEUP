@@ -82,22 +82,16 @@ CREATE TABLE Pessoa (
 		FOREIGN KEY (idCidadeNasc) REFERENCES Cidade
 );
 
-
 CREATE TABLE Jogador (
 	idPessoa		INTEGER		NOT NULL,
 	posicaoPref 	TEXT		,
 	pePref			TEXT		,
-	idContrato		INTEGER		NOT NULL,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa,
-		FOREIGN KEY (idContrato) REFERENCES ContratoJogador
-
 );
 
 CREATE TABLE Staff (
 	idPessoa		INTEGER		PRIMARY KEY,
-	idContrato		INTEGER		NOT NULL,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa,
-		FOREIGN KEY (idContrato) REFERENCES ContratoStaff
 );
 
 CREATE TABLE Arbitro (
@@ -187,7 +181,7 @@ CREATE TABLE Cidade (
 
 CREATE TABLE Evento (
 	id 				INTEGER		PRIMARY KEY,
-	minuto			INTEGER		NOT NULL,
+	minuto			INTEGER		CHECK(minuto>=0),
 	idEquipa 		INTEGER		NOT NULL,
 	idJogador		INTEGER		NOT NULL,
 	idJogo 			INTEGER		NOT NULL,
