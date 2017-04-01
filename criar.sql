@@ -89,7 +89,7 @@ CREATE TABLE Jogador (
 	pePref			TEXT		,
 	idContrato		INTEGER		NOT NULL,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa,
-		FOREIGN KEY (idContrato) REFERENCES Contrato
+		FOREIGN KEY (idContrato) REFERENCES ContratoJogador
 
 );
 
@@ -97,7 +97,7 @@ CREATE TABLE Staff (
 	idPessoa		INTEGER		PRIMARY KEY,
 	idContrato		INTEGER		NOT NULL,
 		FOREIGN KEY (idPessoa) REFERENCES Pessoa
-		FOREIGN KEY (idContrato) REFERENCES Contrato
+		FOREIGN KEY (idContrato) REFERENCES ContratoStaff
 );
 
 CREATE TABLE Arbitro (
