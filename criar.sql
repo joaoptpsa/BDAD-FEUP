@@ -34,21 +34,21 @@ DROP TABLE IF EXISTS Vermelho;
 
 CREATE TABLE Epoca (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio 		REAL		NOT NULL, -- para guardar o numero de dias
-	dataFim 		REAL		NOT NULL -- para guardar o numero de dias
+	dataInicio 		TEXT		NOT NULL, -- para guardar o numero de dias
+	dataFim 		TEXT		NOT NULL -- para guardar o numero de dias
 );
 
 CREATE TABLE Jornada (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio 		REAL		NOT NULL,
-	dataFim 		REAL		NOT NULL,
+	dataInicio 		TEXT		NOT NULL,
+	dataFim 		TEXT		NOT NULL,
 	idEpoca			INTEGER		NOT NULL,
 		FOREIGN KEY (idEpoca) REFERENCES Epoca
 );
 
 CREATE TABLE Jogo (
 	id 				INTEGER 	PRIMARY KEY,
-	data 			REAL		NOT NULL,
+	data 			TEXT		NOT NULL,
 	golosCasa 		INTEGER		CHECK(golosCasa>=0 AND golosCasa IS NOT NULL),
 	golosFora 		INTEGER		CHECK(golosFora>=0 AND golosFora IS NOT NULL),
 	idEquipaCasa	INTEGER		NOT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE Convocado (
 CREATE TABLE Pessoa (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT 		NOT NULL,
-	dataNascimento 	REAL		NOT NULL,
+	dataNascimento 	TEXT		NOT NULL,
 	altura 			INTEGER		CHECK(altura>0), -- cm
 	peso 			INTEGER		CHECK(peso>0),--kg
 	idCidadeNasc	INTEGER		NOT NULL,
@@ -102,8 +102,8 @@ CREATE TABLE Arbitro (
 
 CREATE TABLE Contrato (
 	id 				INTEGER 	PRIMARY KEY,
-	dataInicio 		REAL		NOT NULL,
-	dataFim 		REAL		NOT NULL
+	dataInicio 		TEXT		NOT NULL,
+	dataFim 		TEXT		NOT NULL
 );
 
 CREATE TABLE ContratoStaff (
@@ -144,7 +144,7 @@ CREATE TABLE Equipamento (
 CREATE TABLE Equipa (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT		NOT NULL,
-	dataFundacao 	REAL		NOT NULL,
+	dataFundacao 	TEXT		NOT NULL,
 	idEstadio		INTEGER		NOT NULL,
 		FOREIGN KEY (idEstadio) REFERENCES Estadio
 );
@@ -161,7 +161,7 @@ CREATE TABLE Participou (
 CREATE TABLE Estadio (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT		NOT NULL UNIQUE,
-	dataAbertura 	REAL		NOT NULL,
+	dataAbertura 	TEXT		NOT NULL,
 	morada 			TEXT		NOT NULL,
 	lotacao 		INTEGER		NOT NULL,
 	idCidade 		INTEGER		NOT NULL,
