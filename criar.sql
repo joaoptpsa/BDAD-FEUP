@@ -26,6 +26,7 @@ DROP TABLE IF EXISTS Participou;
 DROP TABLE IF EXISTS Estadio;
 DROP TABLE IF EXISTS Pais;
 DROP TABLE IF EXISTS Cidade;
+DROP TABLE IF EXISTS Evento;
 DROP TABLE IF EXISTS Golo;
 DROP TABLE IF EXISTS Amarelo;
 DROP TABLE IF EXISTS Vermelho;
@@ -76,8 +77,8 @@ CREATE TABLE Pessoa (
 	id 				INTEGER 	PRIMARY KEY,
 	nome 			TEXT 		NOT NULL,
 	dataNascimento 	REAL		NOT NULL, 
-	altura 			INTEGER		CHECK(altura>0 | altura IS NULL), -- cm
-	peso 			INTEGER		CHECK(peso>0 | peso IS NULL),--kg
+	altura 			INTEGER		CHECK(altura>0), -- cm
+	peso 			INTEGER		CHECK(peso>0),--kg
 	idCidadeNasc	INTEGER		NOT NULL,
 		FOREIGN KEY (idCidadeNasc) REFERENCES Cidade
 );
@@ -181,10 +182,11 @@ CREATE TABLE Cidade (
 
 CREATE TABLE Evento (
 	id 				INTEGER		PRIMARY KEY,
-	minuto			INTEGER		CHECK(minuto>=0),
+	minuto			INTEGER		NOT NULL,
 	idEquipa 		INTEGER		NOT NULL,
 	idJogador		INTEGER		NOT NULL,
 	idJogo 			INTEGER		NOT NULL,
+	CHECK(minuto>=0),
 		FOREIGN KEY (idEquipa) REFERENCES Equipa,
 		FOREIGN KEY (idJogador) REFERENCES Jogador,
 		FOREIGN KEY (idJogo) REFERENCES Jogo
