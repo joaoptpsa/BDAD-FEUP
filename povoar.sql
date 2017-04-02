@@ -1,296 +1,299 @@
+/*Allow Foreign Keys*/
+PRAGMA	foreign_keys	=	ON;
+
 --Epoca
-insert into Epoca (id, dataInicio, dataFim) values (1, '2016-08-13', '2017-04-03');
-insert into Epoca (id, dataInicio, dataFim) values (2, '2017-08-13', '2018-04-03');
-insert into Epoca (id, dataInicio, dataFim) values (3, '2018-08-13', '2019-04-03');
-insert into Epoca (id, dataInicio, dataFim) values (4, '2019-08-13', '2020-04-03');
-insert into Epoca (id, dataInicio, dataFim) values (5, '2020-08-13', '2021-04-03');
+insert into Epoca (idEpoca, dataInicio, dataFim) values (1, '2016-08-13', '2017-04-03');
+insert into Epoca (idEpoca, dataInicio, dataFim) values (2, '2017-08-13', '2018-04-03');
+insert into Epoca (idEpoca, dataInicio, dataFim) values (3, '2018-08-13', '2019-04-03');
+insert into Epoca (idEpoca, dataInicio, dataFim) values (4, '2019-08-13', '2020-04-03');
+insert into Epoca (idEpoca, dataInicio, dataFim) values (5, '2020-08-13', '2021-04-03');
 
 --Jornada
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (1, '13/8/2016', '15/8/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (2, '20/8/2016', '22/8/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (3, '27/8/2016', '29/8/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (4, '3/9/2016', '5/9/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (5, '10/9/2016', '12/9/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (6, '17/9/2016', '19/9/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (7, '24/9/2016', '26/9/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (8, '1/10/2016', '3/10/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (9, '8/10/2016', '10/10/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (10, '15/10/2016', '17/10/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (11, '22/10/2016', '24/10/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (12, '29/10/2016', '31/10/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (13, '5/11/2016', '7/11/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (14, '12/11/2016', '14/11/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (15, '19/11/2016', '21/11/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (16, '26/11/2016', '28/11/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (17, '3/12/2016', '5/12/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (18, '10/12/2016', '12/12/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (19, '17/12/2016', '19/12/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (20, '24/12/2016', '26/12/2016', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (21, '31/12/2016', '2/1/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (22, '7/1/2017', '9/1/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (23, '14/1/2017', '16/1/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (24, '21/1/2017', '23/1/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (25, '28/1/2017', '30/1/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (26, '4/2/2017', '6/2/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (27, '11/2/2017', '13/2/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (28, '18/2/2017', '20/2/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (29, '25/2/2017', '27/2/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (30, '4/3/2017', '6/3/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (31, '11/3/2017', '13/3/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (32, '18/3/2017', '20/3/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (33, '25/3/2017', '27/3/2017', 1);
-insert into Jornada (id, dataInicio, dataFim, idEpoca) values (34, '1/4/2017', '3/4/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (1, '13/8/2016', '15/8/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (2, '20/8/2016', '22/8/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (3, '27/8/2016', '29/8/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (4, '3/9/2016', '5/9/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (5, '10/9/2016', '12/9/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (6, '17/9/2016', '19/9/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (7, '24/9/2016', '26/9/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (8, '1/10/2016', '3/10/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (9, '8/10/2016', '10/10/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (10, '15/10/2016', '17/10/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (11, '22/10/2016', '24/10/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (12, '29/10/2016', '31/10/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (13, '5/11/2016', '7/11/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (14, '12/11/2016', '14/11/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (15, '19/11/2016', '21/11/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (16, '26/11/2016', '28/11/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (17, '3/12/2016', '5/12/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (18, '10/12/2016', '12/12/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (19, '17/12/2016', '19/12/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (20, '24/12/2016', '26/12/2016', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (21, '31/12/2016', '2/1/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (22, '7/1/2017', '9/1/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (23, '14/1/2017', '16/1/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (24, '21/1/2017', '23/1/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (25, '28/1/2017', '30/1/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (26, '4/2/2017', '6/2/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (27, '11/2/2017', '13/2/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (28, '18/2/2017', '20/2/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (29, '25/2/2017', '27/2/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (30, '4/3/2017', '6/3/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (31, '11/3/2017', '13/3/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (32, '18/3/2017', '20/3/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (33, '25/3/2017', '27/3/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (34, '1/4/2017', '3/4/2017', 1);
 
 --Pais
-insert into Pais (id, nome) VALUES (1, 'Andorra');
-insert into Pais (id, nome) values (2, 'United Arab Emirates');
-insert into Pais (id, nome) values (3, 'Afghanistan');
-insert into Pais (id, nome) values (4, 'Antigua and Barbuda');
-insert into Pais (id, nome) values (5, 'Anguilla');
-insert into Pais (id, nome) values (6, 'Albania');
-insert into Pais (id, nome) values (7, 'Armenia');
-insert into Pais (id, nome) values (8, 'Angola');
-insert into Pais (id, nome) values (9, 'Antartica');
-insert into Pais (id, nome) values (10, 'Argentina');
-insert into Pais (id, nome) values (11, 'American Samoa');
-insert into Pais (id, nome) values (12, 'Austria');
-insert into Pais (id, nome) values (13, 'Australia');
-insert into Pais (id, nome) values (14, 'Aruba');
-insert into Pais (id, nome) values (15, 'Åland Islands');
-insert into Pais (id, nome) values (16, 'Azerbaijan');
-insert into Pais (id, nome) values (17, 'Bosnia and Herzegovina');
-insert into Pais (id, nome) values (18, 'Barbados');
-insert into Pais (id, nome) values (19, 'Bangladesh');
-insert into Pais (id, nome) values (20, 'Belgium');
-insert into Pais (id, nome) values (21, 'Burkina Faso');
-insert into Pais (id, nome) values (22, 'Bulgaria');
-insert into Pais (id, nome) values (23, 'Bahrain');
-insert into Pais (id, nome) values (24, 'Burundi');
-insert into Pais (id, nome) values (25, 'Benin');
-insert into Pais (id, nome) values (26, 'Saint Barthélemy');
-insert into Pais (id, nome) values (27, 'Bermuda');
-insert into Pais (id, nome) values (28, 'Brunei Darussalam');
-insert into Pais (id, nome) values (29, 'Bolivia');
-insert into Pais (id, nome) values (30, 'Caribbean Netherlands ');
-insert into Pais (id, nome) values (31, 'Brazil');
-insert into Pais (id, nome) values (32, 'Bahamas');
-insert into Pais (id, nome) values (33, 'Bhutan');
-insert into Pais (id, nome) values (34, 'Bouvet Island');
-insert into Pais (id, nome) values (35, 'Botswana');
-insert into Pais (id, nome) values (36, 'Belarus');
-insert into Pais (id, nome) values (37, 'Belize');
-insert into Pais (id, nome) values (38, 'Canada');
-insert into Pais (id, nome) values (39, 'Cocos (Keeling) Islands');
-insert into Pais (id, nome) values (40, 'Democratic Republic of Congo');
-insert into Pais (id, nome) values (41, 'Central African Republic');
-insert into Pais (id, nome) values (42, 'Congo');
-insert into Pais (id, nome) values (43, 'Switzerland');
-insert into Pais (id, nome) values (44, 'Côte d''Ivoire');
-insert into Pais (id, nome) values (45, 'Cook Islands');
-insert into Pais (id, nome) values (46, 'Chile');
-insert into Pais (id, nome) values (47, 'Cameroon');
-insert into Pais (id, nome) values (48, 'China');
-insert into Pais (id, nome) values (49, 'Colombia');
-insert into Pais (id, nome) values (50, 'Costa Rica');
-insert into Pais (id, nome) values (51, 'Cuba');
-insert into Pais (id, nome) values (52, 'Cape Verde');
-insert into Pais (id, nome) values (53, 'Curaçao');
-insert into Pais (id, nome) values (54, 'Christmas Island');
-insert into Pais (id, nome) values (55, 'Cyprus');
-insert into Pais (id, nome) values (56, 'Czech Republic');
-insert into Pais (id, nome) values (57, 'Germany');
-insert into Pais (id, nome) values (58, 'Djibouti');
-insert into Pais (id, nome) values (59, 'Denmark');
-insert into Pais (id, nome) values (60, 'Dominica');
-insert into Pais (id, nome) values (61, 'Dominican Republic');
-insert into Pais (id, nome) values (62, 'Algeria');
-insert into Pais (id, nome) values (63, 'Ecuador');
-insert into Pais (id, nome) values (64, 'Estonia');
-insert into Pais (id, nome) values (65, 'Egypt');
-insert into Pais (id, nome) values (66, 'Western Sahara');
-insert into Pais (id, nome) values (67, 'Eritrea');
-insert into Pais (id, nome) values (68, 'Spain');
-insert into Pais (id, nome) values (69, 'Ethiopia');
-insert into Pais (id, nome) values (70, 'Finland');
-insert into Pais (id, nome) values (71, 'Fiji');
-insert into Pais (id, nome) values (72, 'Falkland Islands');
-insert into Pais (id, nome) values (73, 'Federated States of Micronesia');
-insert into Pais (id, nome) values (74, 'Faroe Islands');
-insert into Pais (id, nome) values (75, 'France');
-insert into Pais (id, nome) values (76, 'Gabon');
-insert into Pais (id, nome) values (77, 'United Kingdom');
-insert into Pais (id, nome) values (78, 'Grenada');
-insert into Pais (id, nome) values (79, 'Georgia');
-insert into Pais (id, nome) values (80, 'French Guiana');
-insert into Pais (id, nome) values (81, 'Guernsey');
-insert into Pais (id, nome) values (82, 'Ghana');
-insert into Pais (id, nome) values (83, 'Gibraltar');
-insert into Pais (id, nome) values (84, 'Greenland');
-insert into Pais (id, nome) values (85, 'Gambia');
-insert into Pais (id, nome) values (86, 'Guinea');
-insert into Pais (id, nome) values (87, 'Guadeloupe');
-insert into Pais (id, nome) values (88, 'Equatorial Guinea');
-insert into Pais (id, nome) values (89, 'Greece');
-insert into Pais (id, nome) values (90, 'South Georgia and the South Sandwich Islands');
-insert into Pais (id, nome) values (91, 'Guatemala');
-insert into Pais (id, nome) values (92, 'Guam');
-insert into Pais (id, nome) values (93, 'Guinea-Bissau');
-insert into Pais (id, nome) values (94, 'Guyana');
-insert into Pais (id, nome) values (95, 'Hong Kong');
-insert into Pais (id, nome) values (96, 'Heard and McDonald Islands');
-insert into Pais (id, nome) values (97, 'Honduras');
-insert into Pais (id, nome) values (98, 'Croatia');
-insert into Pais (id, nome) values (99, 'Haiti');
-insert into Pais (id, nome) values (100, 'Hungary');
-insert into Pais (id, nome) values (101, 'Indonesia');
-insert into Pais (id, nome) values (102, 'Ireland');
-insert into Pais (id, nome) values (103, 'Israel');
-insert into Pais (id, nome) values (104, 'Isle of Man');
-insert into Pais (id, nome) values (105, 'India');
-insert into Pais (id, nome) values (106, 'British Indian Ocean Territory');
-insert into Pais (id, nome) values (107, 'Iraq');
-insert into Pais (id, nome) values (108, 'Iran');
-insert into Pais (id, nome) values (109, 'Iceland');
-insert into Pais (id, nome) values (110, 'Italy');
-insert into Pais (id, nome) values (111, 'Jersey');
-insert into Pais (id, nome) values (112, 'Jamaica');
-insert into Pais (id, nome) values (113, 'Jordan');
-insert into Pais (id, nome) values (114, 'Japan');
-insert into Pais (id, nome) values (115, 'Kenya');
-insert into Pais (id, nome) values (116, 'Kyrgyzstan');
-insert into Pais (id, nome) values (117, 'Cambodia');
-insert into Pais (id, nome) values (118, 'Kiribati');
-insert into Pais (id, nome) values (119, 'Comoros');
-insert into Pais (id, nome) values (120, 'Saint Kitts and Nevis');
-insert into Pais (id, nome) values (121, 'North Korea');
-insert into Pais (id, nome) values (122, 'South Korea');
-insert into Pais (id, nome) values (123, 'Kuwait');
-insert into Pais (id, nome) values (124, 'Cayman Islands');
-insert into Pais (id, nome) values (125, 'Kazakhstan');
-insert into Pais (id, nome) values (126, 'Lao People''s Democratic Republic');
-insert into Pais (id, nome) values (127, 'Lebanon');
-insert into Pais (id, nome) values (128, 'Saint Lucia');
-insert into Pais (id, nome) values (129, 'Liechtenstein');
-insert into Pais (id, nome) values (130, 'Sri Lanka');
-insert into Pais (id, nome) values (131, 'Liberia');
-insert into Pais (id, nome) values (132, 'Lesotho');
-insert into Pais (id, nome) values (133, 'Lithuania');
-insert into Pais (id, nome) values (134, 'Luxembourg');
-insert into Pais (id, nome) values (135, 'Latvia');
-insert into Pais (id, nome) values (136, 'Libya');
-insert into Pais (id, nome) values (137, 'Morocco');
-insert into Pais (id, nome) values (138, 'Monaco');
-insert into Pais (id, nome) values (139, 'Moldova');
-insert into Pais (id, nome) values (140, 'Montenegro');
-insert into Pais (id, nome) values (141, 'Saint-Martin (France)');
-insert into Pais (id, nome) values (142, 'Madagascar');
-insert into Pais (id, nome) values (143, 'Marshall Islands');
-insert into Pais (id, nome) values (144, 'Macedonia');
-insert into Pais (id, nome) values (145, 'Mali');
-insert into Pais (id, nome) values (146, 'Myanmar');
-insert into Pais (id, nome) values (147, 'Mongolia');
-insert into Pais (id, nome) values (148, 'Macau');
-insert into Pais (id, nome) values (149, 'Northern Mariana Islands');
-insert into Pais (id, nome) values (150, 'Martinique');
-insert into Pais (id, nome) values (151, 'Mauritania');
-insert into Pais (id, nome) values (152, 'Montserrat');
-insert into Pais (id, nome) values (153, 'Malta');
-insert into Pais (id, nome) values (154, 'Mauritius');
-insert into Pais (id, nome) values (155, 'Maldives');
-insert into Pais (id, nome) values (156, 'Malawi');
-insert into Pais (id, nome) values (157, 'Mexico');
-insert into Pais (id, nome) values (158, 'Malaysia');
-insert into Pais (id, nome) values (159, 'Mozambique');
-insert into Pais (id, nome) values (160, 'Namibia');
-insert into Pais (id, nome) values (161, 'New Caledonia');
-insert into Pais (id, nome) values (162, 'Niger');
-insert into Pais (id, nome) values (163, 'Norfolk Island');
-insert into Pais (id, nome) values (164, 'Nigeria');
-insert into Pais (id, nome) values (165, 'Nicaragua');
-insert into Pais (id, nome) values (166, 'The Netherlands');
-insert into Pais (id, nome) values (167, 'Norway');
-insert into Pais (id, nome) values (168, 'Nepal');
-insert into Pais (id, nome) values (169, 'Nauru');
-insert into Pais (id, nome) values (170, 'Niue');
-insert into Pais (id, nome) values (171, 'New Zealand');
-insert into Pais (id, nome) values (172, 'Oman');
-insert into Pais (id, nome) values (173, 'Panama');
-insert into Pais (id, nome) values (174, 'Peru');
-insert into Pais (id, nome) values (175, 'French Polynesia');
-insert into Pais (id, nome) values (176, 'Papua New Guinea');
-insert into Pais (id, nome) values (177, 'Philippines');
-insert into Pais (id, nome) values (178, 'Pakistan');
-insert into Pais (id, nome) values (179, 'Poland');
-insert into Pais (id, nome) values (180, 'St. Pierre and Miquelon');
-insert into Pais (id, nome) values (181, 'Pitcairn');
-insert into Pais (id, nome) values (182, 'Puerto Rico');
-insert into Pais (id, nome) values (183, 'State of Palestine');
-insert into Pais (id, nome) values (184, 'Portugal');
-insert into Pais (id, nome) values (185, 'Palau');
-insert into Pais (id, nome) values (186, 'Paraguay');
-insert into Pais (id, nome) values (187, 'Qatar');
-insert into Pais (id, nome) values (188, 'Réunion');
-insert into Pais (id, nome) values (189, 'Romania');
-insert into Pais (id, nome) values (190, 'Serbia');
-insert into Pais (id, nome) values (191, 'Russian Federation');
-insert into Pais (id, nome) values (192, 'Rwanda');
-insert into Pais (id, nome) values (193, 'Saudi Arabia');
-insert into Pais (id, nome) values (194, 'Solomon Islands');
-insert into Pais (id, nome) values (195, 'Seychelles');
-insert into Pais (id, nome) values (196, 'Sudan');
-insert into Pais (id, nome) values (197, 'Sweden');
-insert into Pais (id, nome) values (198, 'Singapore');
-insert into Pais (id, nome) values (199, 'Saint Helena');
-insert into Pais (id, nome) values (200, 'Slovenia');
-insert into Pais (id, nome) values (201, 'Svalbard and Jan Mayen Islands');
-insert into Pais (id, nome) values (202, 'Slovakia');
-insert into Pais (id, nome) values (203, 'Sierra Leone');
-insert into Pais (id, nome) values (204, 'San Marino');
-insert into Pais (id, nome) values (205, 'Senegal');
-insert into Pais (id, nome) values (206, 'Somalia');
-insert into Pais (id, nome) values (207, 'Suriname');
-insert into Pais (id, nome) values (208, 'South Sudan');
-insert into Pais (id, nome) values (209, 'Sao Tome and Principe');
-insert into Pais (id, nome) values (210, 'El Salvador');
-insert into Pais (id, nome) values (211, 'Sint Maarten');
-insert into Pais (id, nome) values (212, 'Syria');
-insert into Pais (id, nome) values (213, 'Swaziland');
-insert into Pais (id, nome) values (214, 'Turks and Caicos Islands');
-insert into Pais (id, nome) values (215, 'Chad');
-insert into Pais (id, nome) values (216, 'French Southern Territories');
-insert into Pais (id, nome) values (217, 'Togo');
-insert into Pais (id, nome) values (218, 'Thailand');
-insert into Pais (id, nome) values (219, 'Tajikistan');
-insert into Pais (id, nome) values (220, 'Tokelau');
-insert into Pais (id, nome) values (221, 'Timor-Leste');
-insert into Pais (id, nome) values (222, 'Turkmenistan');
-insert into Pais (id, nome) values (223, 'Tunisia');
-insert into Pais (id, nome) values (224, 'Tonga');
-insert into Pais (id, nome) values (225, 'Turkey');
-insert into Pais (id, nome) values (226, 'Trinidad and Tobago');
-insert into Pais (id, nome) values (227, 'Tuvalu');
-insert into Pais (id, nome) values (228, 'Taiwan');
-insert into Pais (id, nome) values (229, 'Tanzania');
-insert into Pais (id, nome) values (230, 'Ukraine');
-insert into Pais (id, nome) values (231, 'Uganda');
-insert into Pais (id, nome) values (232, 'United States Minor Outlying Islands');
-insert into Pais (id, nome) values (233, 'United States');
-insert into Pais (id, nome) values (234, 'Uruguay');
-insert into Pais (id, nome) values (235, 'Uzbekistan');
-insert into Pais (id, nome) values (236, 'Vatican');
-insert into Pais (id, nome) values (237, 'Saint Vincent and the Grenadines');
-insert into Pais (id, nome) values (238, 'Venezuela');
-insert into Pais (id, nome) values (239, 'Virgin Islands (British)');
-insert into Pais (id, nome) values (240, 'Virgin Islands (U.S.)');
-insert into Pais (id, nome) values (241, 'Vietnam');
-insert into Pais (id, nome) values (242, 'Vanuatu');
-insert into Pais (id, nome) values (243, 'Wallis and Futuna Islands');
-insert into Pais (id, nome) values (244, 'Samoa');
-insert into Pais (id, nome) values (245, 'Yemen');
-insert into Pais (id, nome) values (246, 'Mayotte');
-insert into Pais (id, nome) values (247, 'South Africa');
-insert into Pais (id, nome) values (248, 'Zambia');
-insert into Pais (id, nome) values (249, 'Zimbabwe');
+insert into Pais (idPais, nome) VALUES (1, 'Andorra');
+insert into Pais (idPais, nome) values (2, 'United Arab Emirates');
+insert into Pais (idPais, nome) values (3, 'Afghanistan');
+insert into Pais (idPais, nome) values (4, 'Antigua and Barbuda');
+insert into Pais (idPais, nome) values (5, 'Anguilla');
+insert into Pais (idPais, nome) values (6, 'Albania');
+insert into Pais (idPais, nome) values (7, 'Armenia');
+insert into Pais (idPais, nome) values (8, 'Angola');
+insert into Pais (idPais, nome) values (9, 'Antartica');
+insert into Pais (idPais, nome) values (10, 'Argentina');
+insert into Pais (idPais, nome) values (11, 'American Samoa');
+insert into Pais (idPais, nome) values (12, 'Austria');
+insert into Pais (idPais, nome) values (13, 'Australia');
+insert into Pais (idPais, nome) values (14, 'Aruba');
+insert into Pais (idPais, nome) values (15, 'Åland Islands');
+insert into Pais (idPais, nome) values (16, 'Azerbaijan');
+insert into Pais (idPais, nome) values (17, 'Bosnia and Herzegovina');
+insert into Pais (idPais, nome) values (18, 'Barbados');
+insert into Pais (idPais, nome) values (19, 'Bangladesh');
+insert into Pais (idPais, nome) values (20, 'Belgium');
+insert into Pais (idPais, nome) values (21, 'Burkina Faso');
+insert into Pais (idPais, nome) values (22, 'Bulgaria');
+insert into Pais (idPais, nome) values (23, 'Bahrain');
+insert into Pais (idPais, nome) values (24, 'Burundi');
+insert into Pais (idPais, nome) values (25, 'Benin');
+insert into Pais (idPais, nome) values (26, 'Saint Barthélemy');
+insert into Pais (idPais, nome) values (27, 'Bermuda');
+insert into Pais (idPais, nome) values (28, 'Brunei Darussalam');
+insert into Pais (idPais, nome) values (29, 'Bolivia');
+insert into Pais (idPais, nome) values (30, 'Caribbean Netherlands ');
+insert into Pais (idPais, nome) values (31, 'Brazil');
+insert into Pais (idPais, nome) values (32, 'Bahamas');
+insert into Pais (idPais, nome) values (33, 'Bhutan');
+insert into Pais (idPais, nome) values (34, 'Bouvet Island');
+insert into Pais (idPais, nome) values (35, 'Botswana');
+insert into Pais (idPais, nome) values (36, 'Belarus');
+insert into Pais (idPais, nome) values (37, 'Belize');
+insert into Pais (idPais, nome) values (38, 'Canada');
+insert into Pais (idPais, nome) values (39, 'Cocos (Keeling) Islands');
+insert into Pais (idPais, nome) values (40, 'Democratic Republic of Congo');
+insert into Pais (idPais, nome) values (41, 'Central African Republic');
+insert into Pais (idPais, nome) values (42, 'Congo');
+insert into Pais (idPais, nome) values (43, 'Switzerland');
+insert into Pais (idPais, nome) values (44, 'Côte d''Ivoire');
+insert into Pais (idPais, nome) values (45, 'Cook Islands');
+insert into Pais (idPais, nome) values (46, 'Chile');
+insert into Pais (idPais, nome) values (47, 'Cameroon');
+insert into Pais (idPais, nome) values (48, 'China');
+insert into Pais (idPais, nome) values (49, 'Colombia');
+insert into Pais (idPais, nome) values (50, 'Costa Rica');
+insert into Pais (idPais, nome) values (51, 'Cuba');
+insert into Pais (idPais, nome) values (52, 'Cape Verde');
+insert into Pais (idPais, nome) values (53, 'Curaçao');
+insert into Pais (idPais, nome) values (54, 'Christmas Island');
+insert into Pais (idPais, nome) values (55, 'Cyprus');
+insert into Pais (idPais, nome) values (56, 'Czech Republic');
+insert into Pais (idPais, nome) values (57, 'Germany');
+insert into Pais (idPais, nome) values (58, 'Djibouti');
+insert into Pais (idPais, nome) values (59, 'Denmark');
+insert into Pais (idPais, nome) values (60, 'Dominica');
+insert into Pais (idPais, nome) values (61, 'Dominican Republic');
+insert into Pais (idPais, nome) values (62, 'Algeria');
+insert into Pais (idPais, nome) values (63, 'Ecuador');
+insert into Pais (idPais, nome) values (64, 'Estonia');
+insert into Pais (idPais, nome) values (65, 'Egypt');
+insert into Pais (idPais, nome) values (66, 'Western Sahara');
+insert into Pais (idPais, nome) values (67, 'Eritrea');
+insert into Pais (idPais, nome) values (68, 'Spain');
+insert into Pais (idPais, nome) values (69, 'Ethiopia');
+insert into Pais (idPais, nome) values (70, 'Finland');
+insert into Pais (idPais, nome) values (71, 'Fiji');
+insert into Pais (idPais, nome) values (72, 'Falkland Islands');
+insert into Pais (idPais, nome) values (73, 'Federated States of Micronesia');
+insert into Pais (idPais, nome) values (74, 'Faroe Islands');
+insert into Pais (idPais, nome) values (75, 'France');
+insert into Pais (idPais, nome) values (76, 'Gabon');
+insert into Pais (idPais, nome) values (77, 'United Kingdom');
+insert into Pais (idPais, nome) values (78, 'Grenada');
+insert into Pais (idPais, nome) values (79, 'Georgia');
+insert into Pais (idPais, nome) values (80, 'French Guiana');
+insert into Pais (idPais, nome) values (81, 'Guernsey');
+insert into Pais (idPais, nome) values (82, 'Ghana');
+insert into Pais (idPais, nome) values (83, 'Gibraltar');
+insert into Pais (idPais, nome) values (84, 'Greenland');
+insert into Pais (idPais, nome) values (85, 'Gambia');
+insert into Pais (idPais, nome) values (86, 'Guinea');
+insert into Pais (idPais, nome) values (87, 'Guadeloupe');
+insert into Pais (idPais, nome) values (88, 'Equatorial Guinea');
+insert into Pais (idPais, nome) values (89, 'Greece');
+insert into Pais (idPais, nome) values (90, 'South Georgia and the South Sandwich Islands');
+insert into Pais (idPais, nome) values (91, 'Guatemala');
+insert into Pais (idPais, nome) values (92, 'Guam');
+insert into Pais (idPais, nome) values (93, 'Guinea-Bissau');
+insert into Pais (idPais, nome) values (94, 'Guyana');
+insert into Pais (idPais, nome) values (95, 'Hong Kong');
+insert into Pais (idPais, nome) values (96, 'Heard and McDonald Islands');
+insert into Pais (idPais, nome) values (97, 'Honduras');
+insert into Pais (idPais, nome) values (98, 'Croatia');
+insert into Pais (idPais, nome) values (99, 'Haiti');
+insert into Pais (idPais, nome) values (100, 'Hungary');
+insert into Pais (idPais, nome) values (101, 'Indonesia');
+insert into Pais (idPais, nome) values (102, 'Ireland');
+insert into Pais (idPais, nome) values (103, 'Israel');
+insert into Pais (idPais, nome) values (104, 'Isle of Man');
+insert into Pais (idPais, nome) values (105, 'India');
+insert into Pais (idPais, nome) values (106, 'British Indian Ocean Territory');
+insert into Pais (idPais, nome) values (107, 'Iraq');
+insert into Pais (idPais, nome) values (108, 'Iran');
+insert into Pais (idPais, nome) values (109, 'Iceland');
+insert into Pais (idPais, nome) values (110, 'Italy');
+insert into Pais (idPais, nome) values (111, 'Jersey');
+insert into Pais (idPais, nome) values (112, 'Jamaica');
+insert into Pais (idPais, nome) values (113, 'Jordan');
+insert into Pais (idPais, nome) values (114, 'Japan');
+insert into Pais (idPais, nome) values (115, 'Kenya');
+insert into Pais (idPais, nome) values (116, 'Kyrgyzstan');
+insert into Pais (idPais, nome) values (117, 'Cambodia');
+insert into Pais (idPais, nome) values (118, 'Kiribati');
+insert into Pais (idPais, nome) values (119, 'Comoros');
+insert into Pais (idPais, nome) values (120, 'Saint Kitts and Nevis');
+insert into Pais (idPais, nome) values (121, 'North Korea');
+insert into Pais (idPais, nome) values (122, 'South Korea');
+insert into Pais (idPais, nome) values (123, 'Kuwait');
+insert into Pais (idPais, nome) values (124, 'Cayman Islands');
+insert into Pais (idPais, nome) values (125, 'Kazakhstan');
+insert into Pais (idPais, nome) values (126, 'Lao People''s Democratic Republic');
+insert into Pais (idPais, nome) values (127, 'Lebanon');
+insert into Pais (idPais, nome) values (128, 'Saint Lucia');
+insert into Pais (idPais, nome) values (129, 'Liechtenstein');
+insert into Pais (idPais, nome) values (130, 'Sri Lanka');
+insert into Pais (idPais, nome) values (131, 'Liberia');
+insert into Pais (idPais, nome) values (132, 'Lesotho');
+insert into Pais (idPais, nome) values (133, 'Lithuania');
+insert into Pais (idPais, nome) values (134, 'Luxembourg');
+insert into Pais (idPais, nome) values (135, 'Latvia');
+insert into Pais (idPais, nome) values (136, 'Libya');
+insert into Pais (idPais, nome) values (137, 'Morocco');
+insert into Pais (idPais, nome) values (138, 'Monaco');
+insert into Pais (idPais, nome) values (139, 'Moldova');
+insert into Pais (idPais, nome) values (140, 'Montenegro');
+insert into Pais (idPais, nome) values (141, 'Saint-Martin (France)');
+insert into Pais (idPais, nome) values (142, 'Madagascar');
+insert into Pais (idPais, nome) values (143, 'Marshall Islands');
+insert into Pais (idPais, nome) values (144, 'Macedonia');
+insert into Pais (idPais, nome) values (145, 'Mali');
+insert into Pais (idPais, nome) values (146, 'Myanmar');
+insert into Pais (idPais, nome) values (147, 'Mongolia');
+insert into Pais (idPais, nome) values (148, 'Macau');
+insert into Pais (idPais, nome) values (149, 'Northern Mariana Islands');
+insert into Pais (idPais, nome) values (150, 'Martinique');
+insert into Pais (idPais, nome) values (151, 'Mauritania');
+insert into Pais (idPais, nome) values (152, 'Montserrat');
+insert into Pais (idPais, nome) values (153, 'Malta');
+insert into Pais (idPais, nome) values (154, 'Mauritius');
+insert into Pais (idPais, nome) values (155, 'Maldives');
+insert into Pais (idPais, nome) values (156, 'Malawi');
+insert into Pais (idPais, nome) values (157, 'Mexico');
+insert into Pais (idPais, nome) values (158, 'Malaysia');
+insert into Pais (idPais, nome) values (159, 'Mozambique');
+insert into Pais (idPais, nome) values (160, 'Namibia');
+insert into Pais (idPais, nome) values (161, 'New Caledonia');
+insert into Pais (idPais, nome) values (162, 'Niger');
+insert into Pais (idPais, nome) values (163, 'Norfolk Island');
+insert into Pais (idPais, nome) values (164, 'Nigeria');
+insert into Pais (idPais, nome) values (165, 'Nicaragua');
+insert into Pais (idPais, nome) values (166, 'The Netherlands');
+insert into Pais (idPais, nome) values (167, 'Norway');
+insert into Pais (idPais, nome) values (168, 'Nepal');
+insert into Pais (idPais, nome) values (169, 'Nauru');
+insert into Pais (idPais, nome) values (170, 'Niue');
+insert into Pais (idPais, nome) values (171, 'New Zealand');
+insert into Pais (idPais, nome) values (172, 'Oman');
+insert into Pais (idPais, nome) values (173, 'Panama');
+insert into Pais (idPais, nome) values (174, 'Peru');
+insert into Pais (idPais, nome) values (175, 'French Polynesia');
+insert into Pais (idPais, nome) values (176, 'Papua New Guinea');
+insert into Pais (idPais, nome) values (177, 'Philippines');
+insert into Pais (idPais, nome) values (178, 'Pakistan');
+insert into Pais (idPais, nome) values (179, 'Poland');
+insert into Pais (idPais, nome) values (180, 'St. Pierre and Miquelon');
+insert into Pais (idPais, nome) values (181, 'Pitcairn');
+insert into Pais (idPais, nome) values (182, 'Puerto Rico');
+insert into Pais (idPais, nome) values (183, 'State of Palestine');
+insert into Pais (idPais, nome) values (184, 'Portugal');
+insert into Pais (idPais, nome) values (185, 'Palau');
+insert into Pais (idPais, nome) values (186, 'Paraguay');
+insert into Pais (idPais, nome) values (187, 'Qatar');
+insert into Pais (idPais, nome) values (188, 'Réunion');
+insert into Pais (idPais, nome) values (189, 'Romania');
+insert into Pais (idPais, nome) values (190, 'Serbia');
+insert into Pais (idPais, nome) values (191, 'Russian Federation');
+insert into Pais (idPais, nome) values (192, 'Rwanda');
+insert into Pais (idPais, nome) values (193, 'Saudi Arabia');
+insert into Pais (idPais, nome) values (194, 'Solomon Islands');
+insert into Pais (idPais, nome) values (195, 'Seychelles');
+insert into Pais (idPais, nome) values (196, 'Sudan');
+insert into Pais (idPais, nome) values (197, 'Sweden');
+insert into Pais (idPais, nome) values (198, 'Singapore');
+insert into Pais (idPais, nome) values (199, 'Saint Helena');
+insert into Pais (idPais, nome) values (200, 'Slovenia');
+insert into Pais (idPais, nome) values (201, 'Svalbard and Jan Mayen Islands');
+insert into Pais (idPais, nome) values (202, 'Slovakia');
+insert into Pais (idPais, nome) values (203, 'Sierra Leone');
+insert into Pais (idPais, nome) values (204, 'San Marino');
+insert into Pais (idPais, nome) values (205, 'Senegal');
+insert into Pais (idPais, nome) values (206, 'Somalia');
+insert into Pais (idPais, nome) values (207, 'Suriname');
+insert into Pais (idPais, nome) values (208, 'South Sudan');
+insert into Pais (idPais, nome) values (209, 'Sao Tome and Principe');
+insert into Pais (idPais, nome) values (210, 'El Salvador');
+insert into Pais (idPais, nome) values (211, 'Sint Maarten');
+insert into Pais (idPais, nome) values (212, 'Syria');
+insert into Pais (idPais, nome) values (213, 'Swaziland');
+insert into Pais (idPais, nome) values (214, 'Turks and Caicos Islands');
+insert into Pais (idPais, nome) values (215, 'Chad');
+insert into Pais (idPais, nome) values (216, 'French Southern Territories');
+insert into Pais (idPais, nome) values (217, 'Togo');
+insert into Pais (idPais, nome) values (218, 'Thailand');
+insert into Pais (idPais, nome) values (219, 'Tajikistan');
+insert into Pais (idPais, nome) values (220, 'Tokelau');
+insert into Pais (idPais, nome) values (221, 'Timor-Leste');
+insert into Pais (idPais, nome) values (222, 'Turkmenistan');
+insert into Pais (idPais, nome) values (223, 'Tunisia');
+insert into Pais (idPais, nome) values (224, 'Tonga');
+insert into Pais (idPais, nome) values (225, 'Turkey');
+insert into Pais (idPais, nome) values (226, 'TrinidPaisad and Tobago');
+insert into Pais (idPais, nome) values (227, 'Tuvalu');
+insert into Pais (idPais, nome) values (228, 'Taiwan');
+insert into Pais (idPais, nome) values (229, 'Tanzania');
+insert into Pais (idPais, nome) values (230, 'Ukraine');
+insert into Pais (idPais, nome) values (231, 'Uganda');
+insert into Pais (idPais, nome) values (232, 'United States Minor Outlying Islands');
+insert into Pais (idPais, nome) values (233, 'United States');
+insert into Pais (idPais, nome) values (234, 'Uruguay');
+insert into Pais (idPais, nome) values (235, 'Uzbekistan');
+insert into Pais (idPais, nome) values (236, 'Vatican');
+insert into Pais (idPais, nome) values (237, 'Saint Vincent and the Grenadines');
+insert into Pais (idPais, nome) values (238, 'Venezuela');
+insert into Pais (idPais, nome) values (239, 'Virgin Islands (British)');
+insert into Pais (idPais, nome) values (240, 'Virgin Islands (U.S.)');
+insert into Pais (idPais, nome) values (241, 'Vietnam');
+insert into Pais (idPais, nome) values (242, 'Vanuatu');
+insert into Pais (idPais, nome) values (243, 'Wallis and Futuna Islands');
+insert into Pais (idPais, nome) values (244, 'Samoa');
+insert into Pais (idPais, nome) values (245, 'Yemen');
+insert into Pais (idPais, nome) values (246, 'Mayotte');
+insert into Pais (idPais, nome) values (247, 'South Africa');
+insert into Pais (idPais, nome) values (248, 'Zambia');
+insert into Pais (idPais, nome) values (249, 'Zimbabwe');
 
 
 --Cidade
@@ -453,8 +456,6 @@ insert into Cidade (id, nome, idPais) values (156, 'Vila Real', 184);
 insert into Cidade (id, nome, idPais) values (157, 'Vila Real de Santo António', 184);
 insert into Cidade (id, nome, idPais) values (158, 'Viseu', 184);
 insert into Cidade (id, nome, idPais) values (159, 'Vizela', 184);
-
-
 insert into Cidade (id, nome, idPais) values (160, 'Shanghai', 48);
 insert into Cidade (id, nome, idPais) values (161, 'Lagos', 164);
 insert into Cidade (id, nome, idPais) values (162, 'Istanbul', 225);
@@ -541,7 +542,6 @@ insert into Cidade (id, nome, idPais) values (242, 'Changsha', 48);
 insert into Cidade (id, nome, idPais) values (243, 'Jaipur', 105);
 insert into Cidade (id, nome, idPais) values (244, 'Xuzhou', 48);
 insert into Cidade (id, nome, idPais) values (245, 'Wenzhou', 48);
-
 insert into Cidade (id, nome, idPais) values (246, 'Liverpool', 77);
 insert into Cidade (id, nome, idPais) values (247, 'Stoke', 77);
 insert into Cidade (id, nome, idPais) values (248, 'Hull', 77);
@@ -969,8 +969,6 @@ insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (412, 'Rice', '1988-10-29', 178, 78, 24);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (413, 'Marney', '1992-03-01', 203, 80, 195);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (414, 'Barton', '1991-09-20', 155, 69, 154);
-
-
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (415, 'Jürgen Klopp', '1970-10-29', 200, 74, 223);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (416, 'Ronald Koeman', '1952-08-07', 208, 97, 118);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (417, 'Slaven Bilic', '1951-01-01', 205, 87, 172);
@@ -989,8 +987,6 @@ insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (430, 'Sean Dyche', '1966-05-01', 177, 72, 242);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (431, 'Tony Pulis', '1964-03-14', 166, 89, 144);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (432, 'Mauricio Pochettino', '1964-09-17', 205, 83, 186);
-
-
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (433, 'Arthur Morrison', '1971-06-24', 150, 104, 79);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (434, 'Jeffrey Howell', '1964-12-06', 159, 78, 200);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (435, 'Evelyn Bennett', '1952-05-26', 195, 64, 238);
@@ -1099,8 +1095,6 @@ insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (538, 'Ryan Rose', '1954-06-01', 162, 68, 120);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (539, 'Stephen Barnes', '1965-03-15', 152, 70, 52);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (540, 'Catherine Ramos', '1971-10-25', 167, 97, 143);
-
-
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (541, 'Pedro Proença', '1963-11-06', 173, 65, 155);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (542, 'Carlos Xistra', '1965-05-05', 190, 92, 23);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (543, 'Mark Clattenburg', '1971-10-13', 188, 96, 83);
@@ -1110,7 +1104,6 @@ insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (547, 'Howard Webb', '1978-12-17', 189, 61, 75);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (548, 'Anthony Taylor', '1964-02-25', 200, 86, 43);
 insert into Pessoa (id, nome, dataNascimento, altura, peso, idCidadeNasc) values (549, 'Artur Soares Dias', '1984-04-06', 157, 64, 14);
-
 
 --Estadio
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (1, 'Anfield Road', '1892', 'Liverpool', 45276,246);
@@ -1132,8 +1125,6 @@ insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (1
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (17, 'Vitality Stadium', '1910', 'Bournemouth', 12000,256);
 insert into Estadio (id, nome, dataAbertura, morada, lotacao,idCidade) values (18, 'White Hart Lane', '1899', 'London', 36230,183);
 
-
-
 --Equipa
 insert into Equipa (id, nome, dataFundacao, idEstadio) values (1, 'Liverpool', '1901', 1);
 insert into Equipa (id, nome, dataFundacao, idEstadio) values (2, 'Stoke', '1891', 2);
@@ -1153,7 +1144,6 @@ insert into Equipa (id, nome, dataFundacao, idEstadio) values (15, 'West Brom', 
 insert into Equipa (id, nome, dataFundacao, idEstadio) values (16, 'Burnley', '1932', 16);
 insert into Equipa (id, nome, dataFundacao, idEstadio) values (17, 'Bournemouth', '1916', 17);
 insert into Equipa (id, nome, dataFundacao, idEstadio) values (18, 'Tottenham', '1924', 18);
-
 
 --Participou
 insert into Participou (idEquipa, idEpoca, classificacao) values (1, 1, 1);
@@ -1175,8 +1165,6 @@ insert into Participou (idEquipa, idEpoca, classificacao) values (16, 1, 16);
 insert into Participou (idEquipa, idEpoca, classificacao) values (17, 1, 17);
 insert into Participou (idEquipa, idEpoca, classificacao) values (18, 1, 8);
 
-
-
 --Equipamento
 insert into Equipamento (id, corCamisola, corCalcoes, idEquipa, idEpoca) values (1, 'Preto', 'Azul', 1, 1);
 insert into Equipamento (id, corCamisola, corCalcoes, idEquipa, idEpoca) values (2, 'Vermelho', 'Preto', 2, 1);
@@ -1197,7 +1185,6 @@ insert into Equipamento (id, corCamisola, corCalcoes, idEquipa, idEpoca) values 
 insert into Equipamento (id, corCamisola, corCalcoes, idEquipa, idEpoca) values (17, 'Cor-de-Rosa', 'Violeta', 17, 1);
 insert into Equipamento (id, corCamisola, corCalcoes, idEquipa, idEpoca) values (18, 'Violeta', 'Preto', 18, 1);
 
-
 --Arbitro
 insert into Arbitro (idPessoa) values (541);
 insert into Arbitro (idPessoa) values (542);
@@ -1209,7 +1196,6 @@ insert into Arbitro (idPessoa) values (547);
 insert into Arbitro (idPessoa) values (548);
 insert into Arbitro (idPessoa) values (549);
 
-
 --Jogo
 insert into Jogo (id, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (1, '2016-08-13', 4, 4, 12, 4, 12,541,1);
 insert into Jogo (id, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (2, '2016-08-13', 0, 3, 11, 10, 11,542,1);
@@ -1220,8 +1206,6 @@ insert into Jogo (id, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, id
 insert into Jogo (id, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (7, '2016-08-15', 2, 1, 5, 15, 5,547,1);
 insert into Jogo (id, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (8, '2016-08-15', 1, 3, 6, 3, 6,548,1);
 insert into Jogo (id, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (9, '2016-08-15', 1, 1, 14, 2, 14,549,1);
-
-
 
 --Contrato
 insert into Contrato (id, dataInicio, dataFim) values (1, '2016-08-13', '2017-04-03');
@@ -1765,8 +1749,6 @@ insert into Contrato (id, dataInicio, dataFim) values (538, '2016-08-13', '2017-
 insert into Contrato (id, dataInicio, dataFim) values (539, '2016-08-13', '2017-04-03');
 insert into Contrato (id, dataInicio, dataFim) values (540, '2016-08-13', '2017-04-03');
 
-
-
 --Jogador
 insert into Jogador (idPessoa, posicaoPref, pePref) values (1, 'Defesa', 'Direito');
 insert into Jogador (idPessoa, posicaoPref, pePref) values (2, 'Médio', 'Direito');
@@ -2182,7 +2164,6 @@ insert into Jogador (idPessoa, posicaoPref, pePref) values (411, 'Avançado', 'D
 insert into Jogador (idPessoa, posicaoPref, pePref) values (412, 'Avançado', 'Direito');
 insert into Jogador (idPessoa, posicaoPref, pePref) values (413, 'Médio', 'Direito');
 insert into Jogador (idPessoa, posicaoPref, pePref) values (414, 'Médio', 'Esquerdo');
-
 
 --ContratoJogador
 insert into ContratoJogador (idContrato, idJogador, idEquipa) values (1, 1, 1);
@@ -2600,8 +2581,6 @@ insert into ContratoJogador (idContrato, idJogador, idEquipa) values (412, 412, 
 insert into ContratoJogador (idContrato, idJogador, idEquipa) values (413, 413, 18);
 insert into ContratoJogador (idContrato, idJogador, idEquipa) values (414, 414, 18);
 
-
-
 --Funcao
 insert into Funcao (id, nome) values (1, 'Treinador Principal');
 insert into Funcao (id, nome) values (2, 'Treinador-Adjunto');
@@ -2739,7 +2718,6 @@ insert into Staff (idPessoa) values (538);
 insert into Staff (idPessoa) values (539);
 insert into Staff (idPessoa) values (540);
 
-
 --ContratoStaff
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (415, 415, 1, 1);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (416, 416, 2, 1);
@@ -2759,7 +2737,6 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (429,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (430, 430, 16, 1);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (431, 431, 17, 1);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (432, 432, 18, 1);
-
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (433, 433, 1, 2);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (434, 434, 2, 2);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (435, 435, 3, 2);
@@ -2778,7 +2755,6 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (447,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (448, 448, 16, 2);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (449, 449, 17, 2);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (450, 450, 18, 2);
-
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (451, 451, 1, 3);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (452, 452, 2, 3);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (453, 453, 3, 3);
@@ -2797,7 +2773,6 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (465,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (466, 466, 16, 3);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (467, 467, 17, 3);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (468, 468, 18, 3);
-
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (469, 469, 1, 4);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (470, 470, 2, 4);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (471, 471, 3, 4);
@@ -2816,7 +2791,6 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (483,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (484, 484, 16, 4);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (485, 485, 17, 4);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (486, 486, 18, 4);
-
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (487, 487, 1, 5);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (488, 488, 2, 5);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (489, 489, 3, 5);
@@ -2835,7 +2809,6 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (501,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (502, 502, 16, 5);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (503, 503, 17, 5);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (504, 504, 18, 5);
-
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (505, 505, 1, 6);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (506, 506, 2, 6);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (507, 507, 3, 6);
@@ -2854,7 +2827,6 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (519,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (520, 520, 16, 6);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (521, 521, 17, 6);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (522, 522, 18, 6);
-
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (523, 523, 1, 7);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (524, 524, 2, 7);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (525, 525, 3, 7);
@@ -2873,7 +2845,6 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (537,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (538, 538, 16, 7);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (539, 539, 17, 7);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (540, 540, 18, 7);
-
 
 --Convocado
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (254, 1, '0', NULL);
@@ -2894,9 +2865,6 @@ insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (26
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (269, 1, NULL,NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (270, 1, NULL,NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (271, 1, '75', NULL);
-
-
-
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (70, 1, '0', NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (71, 1, '0', '60');
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (72, 1, '0', NULL);
@@ -2908,7 +2876,6 @@ insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (77
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (78, 1, '0', NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (79, 1, '0', NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (80, 1, '0', '93');
-
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (81, 1, '93', NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (82, 1, '60', NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (83, 1, NULL,NULL);
@@ -2917,30 +2884,30 @@ insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (85
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (86, 1, NULL,NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (87, 1, '40', NULL);
 
-
-
 --Evento
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (1, 25, 12, 257, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (2, 76, 12, 257, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (3, 74, 12, 258, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (4, 80, 12, 256, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (5, 71, 12, 264, 1);
-
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (6, 69, 4, 72, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (7, 6, 4, 74, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (8, 65, 4, 76, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (9, 18, 4, 76, 1);
 insert into Evento (id, minuto, idEquipa, idJogador, idJogo) values (10, 51, 4, 78, 1);
 
-
+--Golo
 insert into Golo (idEvento) values (1);
 insert into Golo (idEvento) values (2);
 insert into Golo (idEvento) values (3);
 insert into Golo (idEvento) values (4);
-insert into Amarelo (idEvento) values (5);
-
 insert into Golo (idEvento) values (6);
 insert into Golo (idEvento) values (7);
 insert into Golo (idEvento) values (8);
 insert into Golo (idEvento) values (9);
+
+--Amarelo
+insert into Amarelo (idEvento) values (5);
+
+--Vermelho
 insert into Vermelho (idEvento) values (10);
