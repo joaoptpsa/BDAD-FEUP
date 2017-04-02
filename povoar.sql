@@ -9,40 +9,40 @@ insert into Epoca (idEpoca, dataInicio, dataFim) values (4, '2019-08-13', '2020-
 insert into Epoca (idEpoca, dataInicio, dataFim) values (5, '2020-08-13', '2021-04-03');
 
 --Jornada
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (1, '13/8/2016', '15/8/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (2, '20/8/2016', '22/8/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (3, '27/8/2016', '29/8/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (4, '3/9/2016', '5/9/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (5, '10/9/2016', '12/9/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (6, '17/9/2016', '19/9/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (7, '24/9/2016', '26/9/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (8, '1/10/2016', '3/10/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (9, '8/10/2016', '10/10/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (10, '15/10/2016', '17/10/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (11, '22/10/2016', '24/10/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (12, '29/10/2016', '31/10/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (13, '5/11/2016', '7/11/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (14, '12/11/2016', '14/11/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (15, '19/11/2016', '21/11/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (16, '26/11/2016', '28/11/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (17, '3/12/2016', '5/12/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (18, '10/12/2016', '12/12/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (19, '17/12/2016', '19/12/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (20, '24/12/2016', '26/12/2016', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (21, '31/12/2016', '2/1/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (22, '7/1/2017', '9/1/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (23, '14/1/2017', '16/1/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (24, '21/1/2017', '23/1/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (25, '28/1/2017', '30/1/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (26, '4/2/2017', '6/2/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (27, '11/2/2017', '13/2/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (28, '18/2/2017', '20/2/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (29, '25/2/2017', '27/2/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (30, '4/3/2017', '6/3/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (31, '11/3/2017', '13/3/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (32, '18/3/2017', '20/3/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (33, '25/3/2017', '27/3/2017', 1);
-insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (34, '1/4/2017', '3/4/2017', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (1, '2016-08-13', '2016-08-15', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (2, '2016-08-20', '2016-08-22', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (3, '2016-08-27', '2016-08-29', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (4, '2016-09-03', '2016-09-05', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (5, '2016-09-10', '2016-09-12', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (6, '2016-09-17', '2016-09-19', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (7, '2016-09-24', '2016-09-26', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (8, '2016-10-01', '2016-10-03', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (9, '2016-10-08', '2016-10-10', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (10, '2016-10-15', '2016-10-17', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (11, '2016-10-22', '2016-10-14', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (12, '2016-10-29', '2016-10-31', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (13, '2016-11-05', '2016-11-07', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (14, '2016-11-12', '2016-11-14', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (15, '2016-11-19', '2016-11-21', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (16, '2016-11-26', '2016-11-28', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (17, '2016-12-03', '2016-12-05', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (18, '2016-12-10', '2016-12-12', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (19, '2016-12-17', '2016-12-19', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (20, '2016-12-24', '2016-12-26', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (21, '2016-12-31', '2017-01-02', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (22, '2017-01-07', '2017-01-09', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (23, '2017-01-14', '2017-01-16', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (24, '2017-01-21', '2017-01-23', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (25, '2017-01-28', '2017-01-30', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (26, '2017-02-04', '2017-02-06', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (27, '2017-02-11', '2017-02-13', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (28, '2017-02-18', '2017-02-20', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (29, '2017-02-25', '2017-02-27', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (30, '2017-03-04', '2017-03-06', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (31, '2017-03-11', '2017-03-13', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (32, '2017-03-18', '2017-03-20', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (33, '2017-03-25', '2017-03-27', 1);
+insert into Jornada (idJornada, dataInicio, dataFim, idJornadaEpoca) values (34, '2017-04-01', '2017-04-03', 1);
 
 --Pais
 insert into Pais (idPais, nome) VALUES (1, 'Andorra');
@@ -1107,24 +1107,24 @@ insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) 
 
 
 --Estadio
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (1, 'Anfield Road', '1892', 'Liverpool', 45276,246);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (2, 'Britannia Stadium', '1997', 'Stoke', 27740,247);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (3, 'Goodison Park', '1892', 'Liverpool', 40157,246);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (4, 'KC Stadium', '2002', 'Hull', 25586,248);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (5, 'King Power Stadium', '2002', 'Leicester', 32262,249);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (6, 'Old Trafford', '1910', 'Manchester', 75731,250);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (7, 'Olympic Stadium London', '2011', 'London', 60000,183);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (8, 'Riverside Stadium', '1995', 'Middlesbrough', 34742,251);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (9, 'Selhurst Park', '1924', 'London', 26309,183);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (10, 'St Mary''s Stadium', '2001', 'Southampton', 32363,252);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (11, 'Stadium of Light', '1997', 'Sunderland', 49000,253);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (12, 'Stamford Bridge', '1876', 'London', 41837,183);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (13, 'The Emirates', '2006', 'London', 60338,183);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (14, 'The Etihad', '2003', 'Manchester', 47805,250);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (15, 'The Hawthorns', '1900', 'West Bromwich', 27000,254);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (16, 'Turf Moor', '1883', 'Burnley', 21940,255);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (17, 'Vitality Stadium', '1910', 'Bournemouth', 12000,256);
-insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (18, 'White Hart Lane', '1899', 'London', 36230,183);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (1, 'Anfield Road', '1892', '90508 Surrey Circle', 54074,246);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (2, 'Britannia Stadium', '1997', '845 Cottonwood Pass', 27740,247);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (3, 'Goodison Park', '1892', '5 Larry Road', 40157,246);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (4, 'KC Stadium', '2002', '4 Judy Street', 25586,248);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (5, 'King Power Stadium', '2002', '458 Fremont Pass', 32262,249);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (6, 'Old Trafford', '1910', '5513 Jenna Street', 75731,250);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (7, 'Olympic Stadium London', '2011', '16074 Northport Circle', 60000,183);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (8, 'Riverside Stadium', '1995', '31402 Transport Center', 34742,251);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (9, 'Selhurst Park', '1924', '335 Hauk Park', 26309,183);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (10, 'St Mary''s Stadium', '2001', '47 North Alley', 32363,252);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (11, 'Stadium of Light', '1997', '73868 Artisan Drive', 49000,253);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (12, 'Stamford Bridge', '1876', '82663 Pierstorff Center', 41837,183);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (13, 'The Emirates', '2006', '1 Reinke Park', 60338,183);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (14, 'The Etihad', '2003', '21 Marquette Crossing', 47805,250);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (15, 'The Hawthorns', '1900', '34 Larry Terrace', 27000,254);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (16, 'Turf Moor', '1883', '411 Logan Way', 21940,255);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (17, 'Vitality Stadium', '1910', '09 Montana Street', 12000,256);
+insert into Estadio (idEstadio, nome, dataAbertura, morada, lotacao,idCidade) values (18, 'White Hart Lane', '1899', '8 Farragut Terrace', 36230,183);
 
 --Equipa
 insert into Equipa (idEquipa, nome, dataFundacao, idEstadio) values (1, 'Liverpool', '1901', 1);
