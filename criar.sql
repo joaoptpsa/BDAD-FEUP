@@ -1,7 +1,7 @@
 /*Formatting Output*/
 .header on
 .mode column
-.timer on
+--.timer on
 
 /*Allow Foreign Keys*/
 PRAGMA foreign_keys = ON;
