@@ -1100,7 +1100,7 @@ insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) 
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (543, 'Mark Clattenburg', '1971-10-13', 188, 96, 83);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (544, 'Pierluigi Collina', '1967-12-07', 191, 87, 177);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (545, 'Felix Brych', '1968-05-27', 160, 93, 208);
-insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (546, 'Nicola Rizzoli', '966-11-10', 176, 85, 16);
+insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (546, 'Nicola Rizzoli', '1966-11-10', 176, 85, 16);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (547, 'Howard Webb', '1978-12-17', 189, 61, 75);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (548, 'Anthony Taylor', '1964-02-25', 200, 86, 43);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (549, 'Artur Soares Dias', '1984-04-06', 157, 64, 14);
