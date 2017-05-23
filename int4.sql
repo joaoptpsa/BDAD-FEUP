@@ -2,7 +2,7 @@
 .headers on
 .nullvalue NULL
 
-/*INTERROGACAO 4 - Equipa menos golos sofridos na primeira epoca da liga*/
+/*INTERROGACAO 4 - Equipa menos golos sofridos na historia da liga*/
 
 /*
 --Numero de golos sofridos em casa
