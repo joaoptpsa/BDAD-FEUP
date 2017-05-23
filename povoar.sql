@@ -810,7 +810,7 @@ insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) 
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (253, 'Wijnaldum', '1980-04-06', 164, 100, 232);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (254, 'Sané', '1982-01-29', 189, 96, 61);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (255, 'Walcott', '1989-09-30', 191, 95, 128);
-insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (256, 'Yaya Touré', '1994-12-15', 181, 87, 28);
+insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (256, 'Yaya Toure', '1994-12-15', 181, 87, 28);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (257, 'Mata', '1985-11-01', 192, 90, 144);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (258, 'Pedro', '1995-03-30', 206, 64, 53);
 insert into Pessoa (idPessoa, nome, dataNascimento, altura, peso, idCidadeNasc) values (259, 'Barkley', '1986-07-05', 178, 70, 26);
@@ -1277,17 +1277,6 @@ insert into Arbitro (idPessoa) values (623);
 insert into Arbitro (idPessoa) values (624);
 insert into Arbitro (idPessoa) values (625);
 insert into Arbitro (idPessoa) values (626);
-
---Jogo
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (1, '2016-08-13', 4, 4, 12, 4, 12,618,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (2, '2016-08-13', 0, 3, 11, 10, 11,619,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (3, '2016-08-14', 1, 4, 9, 13, 9,620,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (4, '2016-08-14', 4, 1, 18, 1, 18,621,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (5, '2016-08-14', 1, 3, 16, 17, 16,622,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (6, '2016-08-14', 0, 0, 8, 7, 8,623,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (7, '2016-08-15', 2, 1, 5, 15, 5,624,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (8, '2016-08-15', 1, 3, 6, 3, 6,625,1);
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (9, '2016-08-15', 1, 1, 14, 2, 14,626,1);
 
 --Contrato
 insert into Contrato (idContrato, dataInicio, dataFim) values (1, '2016-08-13', '2017-04-03');
@@ -3162,55 +3151,77 @@ insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (615,
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (616, 616, 17, 7);
 insert into ContratoStaff (idContrato, idStaff, idEquipa, idFuncao) values (617, 617, 18, 7);
 
+--Jogo
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (1, '2016-08-13', 4, 4, 12, 4, 12,618,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (2, '2016-08-13', 0, 3, 11, 10, 11,619,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (3, '2016-08-14', 1, 4, 9, 13, 9,620,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (4, '2016-08-14', 1, 4, 18, 1, 18,621,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (5, '2016-08-14', 1, 3, 16, 17, 16,622,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (6, '2016-08-14', 0, 1, 8, 7, 8,623,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (7, '2016-08-15', 2, 1, 5, 15, 5,624,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (8, '2016-08-15', 1, 3, 6, 3, 6,625,1);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (9, '2016-08-15', 1, 1, 14, 2, 14,626,1);
+
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (10, '2016-08-20', 5, 4, 13, 12, 13,618,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (11, '2016-08-20', 3, 0, 1, 6, 1,619,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (12, '2016-08-21', 1, 2, 3, 18, 3,620,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (13, '2016-08-21', 2, 0, 4, 8, 4,621,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (14, '2016-08-21', 2, 2, 7, 5, 7,622,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (15, '2016-08-21', 0, 1, 17, 14, 17,623,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (16, '2016-08-22', 1, 0, 10, 9, 10,624,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (17, '2016-08-22', 1, 3, 15, 16, 15,625,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (18, '2016-08-22', 3, 1, 2, 11, 2,626,2);
+
 --Convocado
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (254, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (255, 1, '0', '45');
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (12, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (84, 1, '0', '45');
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (48, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (102, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (120, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (138, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (156, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (174, 1, '0', '75');
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (246, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (264, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (282, 1, '0', '90');
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (354, 1, '90', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (372, 1, '45', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (30, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (408, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (444, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (462, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (480, 1, '75', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (4, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (76, 1, '0', '60');
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (130, 1, '0', NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (256, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (257, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (258, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (259, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (260, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (261, 1, '0', '75');
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (262, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (263, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (264, 1, '0', '90');
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (265, 1, '90', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (266, 1, '45', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (267, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (268, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (269, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (270, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (271, 1, '75', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (70, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (71, 1, '0', '60');
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (72, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (73, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (74, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (75, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (76, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (77, 1, '0', '40');
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (78, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (79, 1, '0', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (80, 1, '0', '93');
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (81, 1, '93', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (82, 1, '60', NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (83, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (84, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (85, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (86, 1, NULL,NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (87, 1, '40', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (328, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (400, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (382, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (310, 1, '0', '40');
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (364, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (346, 1, '0', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (418, 1, '0', '93');
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (58, 1, '93', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (94, 1, '60', NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (292, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (220, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (490, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (454, 1, NULL,NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (436, 1, '40', NULL);
 
 --Evento
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (1, 25, 12, 257, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (2, 76, 12, 257, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (3, 74, 12, 258, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (4, 80, 12, 256, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (1, 25, 12, 120, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (2, 74, 12, 120, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (3, 76, 12, 246, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (4, 80, 12, 246, 1);
 insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (5, 71, 12, 264, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (6, 69, 4, 72, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (7, 6, 4, 74, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (8, 65, 4, 76, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (9, 18, 4, 76, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (10, 51, 4, 78, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (6, 6, 4, 256, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (7, 65, 4, 256, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (8, 69, 4, 256, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (9, 90, 4, 418, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (10, 91, 4, 4, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (11, 45, 4, 400, 1);
 
 --Golo
 insert into Golo (idEvento) values (1);
@@ -3227,3 +3238,4 @@ insert into Amarelo (idEvento) values (5);
 
 --Vermelho
 insert into Vermelho (idEvento) values (10);
+  insert into Vermelho (idEvento) values (11);
