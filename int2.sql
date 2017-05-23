@@ -4,7 +4,6 @@
 
 /*INTERROGACAO 2 - Melhores marcardores*/
 
-
 SELECT Pessoa.nome, count(Pessoa.nome)
 FROM Golo INNER JOIN Evento
 ON Golo.idEvento = Evento.idEvento
