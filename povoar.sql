@@ -3163,7 +3163,7 @@ insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora
 insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (8, '2016-08-15', 1, 3, 6, 3, 6,625,1);
 insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (9, '2016-08-15', 1, 1, 14, 2, 14,626,1);
 
-insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (10, '2016-08-20', 5, 4, 13, 12, 13,618,2);
+insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (10, '2016-08-20', 4, 5, 13, 12, 13,618,2);
 insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (11, '2016-08-20', 3, 0, 1, 6, 1,619,2);
 insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (12, '2016-08-21', 1, 2, 3, 18, 3,620,2);
 insert into Jogo (idJogo, data, golosCasa, golosFora, idEquipaCasa, idEquipaFora, idEstadio, idArbitro, idJornada) values (13, '2016-08-21', 2, 0, 4, 8, 4,621,2);
