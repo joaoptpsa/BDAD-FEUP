@@ -2,6 +2,7 @@
 .headers on
 .nullvalue NULL
 
+.width 15 15
 /*INTERROGACAO 4 - Equipa menos golos sofridos na historia da liga*/
 
 /*

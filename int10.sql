@@ -2,6 +2,7 @@
 .headers on
 .nullvalue NULL
 
+.width 20 10
 /*INTERROGACAO 10 - Jogadores com mais cartoes*/
 
 /*

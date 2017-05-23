@@ -2,6 +2,7 @@
 .headers on
 .nullvalue NULL
 
+.width 12 15
 /*INTERROGACAO 5 - Jogadores sub23*/
 
 SELECT strftime('%Y', 'now')-strftime ('%Y', Pessoa.dataNascimento) as Idade, count (*) as Num_Jogadores
