@@ -10,5 +10,3 @@ WHEN (
 BEGIN
   SELECT RAISE(ABORT, 'So podem haver 34 jornadas numa Epoca');
 END;
-
---INSERT INTO Jornada VALUES (35, '2017-05-25', '2017-06-01', 1);

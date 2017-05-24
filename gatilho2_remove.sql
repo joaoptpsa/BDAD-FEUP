@@ -1,1 +1,1 @@
-DROP TRIGGER IF EXISTS Convocado_Trigger;
+DROP TRIGGER IF EXISTS Amarelo_Triggers;

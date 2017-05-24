@@ -3239,4 +3239,4 @@ insert into Amarelo (idEvento) values (5);
 
 --Vermelho
 insert into Vermelho (idEvento) values (10);
-  insert into Vermelho (idEvento) values (11);
+insert into Vermelho (idEvento) values (11);
