@@ -48,7 +48,7 @@ CREATE TABLE Jornada (
 
 CREATE TABLE Jogo (
 	idJogo			INTEGER 	PRIMARY KEY,
-	data 			TEXT		NOT NULL,
+	data 			DATE		NOT NULL,
 	golosCasa 		INTEGER		CHECK(golosCasa>=0 AND golosCasa IS NOT NULL),
 	golosFora 		INTEGER		CHECK(golosFora>=0 AND golosFora IS NOT NULL),
 	idEquipaCasa	INTEGER		NOT NULL,

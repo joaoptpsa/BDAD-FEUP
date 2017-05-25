@@ -1229,43 +1229,43 @@ insert into Equipa (idEquipa, nome, dataFundacao, idEstadio) values (18, 'Totten
 
 --Participou
 insert into Participou (idEquipa, idEpoca, classificacao) values (1, 1, 1);
-insert into Participou (idEquipa, idEpoca, classificacao) values (2, 1, 13);
-insert into Participou (idEquipa, idEpoca, classificacao) values (3, 1, 12);
-insert into Participou (idEquipa, idEpoca, classificacao) values (4, 1, 14);
+insert into Participou (idEquipa, idEpoca, classificacao) values (2, 1, 2);
+insert into Participou (idEquipa, idEpoca, classificacao) values (3, 1, 3);
+insert into Participou (idEquipa, idEpoca, classificacao) values (4, 1, 4);
 insert into Participou (idEquipa, idEpoca, classificacao) values (5, 1, 5);
 insert into Participou (idEquipa, idEpoca, classificacao) values (6, 1, 6);
 insert into Participou (idEquipa, idEpoca, classificacao) values (7, 1, 7);
-insert into Participou (idEquipa, idEpoca, classificacao) values (8, 1, 18);
+insert into Participou (idEquipa, idEpoca, classificacao) values (8, 1, 8);
 insert into Participou (idEquipa, idEpoca, classificacao) values (9, 1, 9);
 insert into Participou (idEquipa, idEpoca, classificacao) values (10, 1, 10);
 insert into Participou (idEquipa, idEpoca, classificacao) values (11, 1, 11);
-insert into Participou (idEquipa, idEpoca, classificacao) values (12, 1, 2);
-insert into Participou (idEquipa, idEpoca, classificacao) values (13, 1, 4);
-insert into Participou (idEquipa, idEpoca, classificacao) values (14, 1, 3);
+insert into Participou (idEquipa, idEpoca, classificacao) values (12, 1, 12);
+insert into Participou (idEquipa, idEpoca, classificacao) values (13, 1, 13);
+insert into Participou (idEquipa, idEpoca, classificacao) values (14, 1, 14);
 insert into Participou (idEquipa, idEpoca, classificacao) values (15, 1, 15);
 insert into Participou (idEquipa, idEpoca, classificacao) values (16, 1, 16);
 insert into Participou (idEquipa, idEpoca, classificacao) values (17, 1, 17);
-insert into Participou (idEquipa, idEpoca, classificacao) values (18, 1, 8);
+insert into Participou (idEquipa, idEpoca, classificacao) values (18, 1, 18);
 
 --Equipamento
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (1, 'Preto', 'Azul', 1, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (2, 'Vermelho', 'Preto', 2, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (3, 'Preto', 'Violeta', 3, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (4, 'Preto', 'Amarelo', 4, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (5, 'Violeta', 'Preto', 5, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (6, 'Preto', 'Cor-de-Rosa', 6, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (7, 'Vermelho', 'Verde', 7, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (8, 'Verde', 'Preto', 8, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (9, 'Preto', 'Branco', 9, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (10, 'Preto', 'Cor-de-Rosa', 10, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (11, 'Violeta', 'Preto', 11, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (12, 'Preto', 'Preto', 12, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (13, 'Violeta', 'Violeta', 13, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (14, 'Preto', 'Azul', 14, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (15, 'Preto', 'Violeta', 15, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (16, 'Branco', 'Preto', 16, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (17, 'Cor-de-Rosa', 'Violeta', 17, 1);
-insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (18, 'Violeta', 'Preto', 18, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (1, 'Vermelho', 'Branco', 1, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (2, 'Branco', 'Vermelho', 2, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (3, 'Amarelo', 'Preto', 3, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (4, 'Azul', 'Branco', 4, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (5, 'Branco', 'Branco', 5, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (6, 'Azul', 'Branco', 6, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (7, 'Vermelho', 'Preto', 7, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (8, 'Verde', 'Branco', 8, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (9, 'Branco', 'Branco', 9, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (10, 'Azul', 'Branco', 10, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (11, 'Branco', 'Branco', 11, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (12, 'Vermelho', 'Preto', 12, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (13, 'Branco', 'Branco', 13, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (14, 'Azul', 'Preto', 14, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (15, 'Vermelho', 'Branco', 15, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (16, 'Verde', 'Branco', 16, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (17, 'Vermelho', 'Vermelho', 17, 1);
+insert into Equipamento (idEquipamento, corCamisola, corCalcoes, idEquipa, idEpoca) values (18, 'Azul', 'Branco', 18, 1);
 
 
 --Arbitro
