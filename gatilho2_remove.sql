@@ -1,1 +1,2 @@
 DROP TRIGGER IF EXISTS Amarelo_Triggers;
+DROP TRIGGER IF EXISTS Amarelo_To_Vermelho;

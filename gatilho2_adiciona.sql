@@ -4,32 +4,22 @@ CREATE TRIGGER IF NOT EXISTS Amarelo_Triggers
 BEFORE INSERT ON Amarelo
 FOR EACH ROW --Already default
 BEGIN
-SELECT CASE
-WHEN (
-  (SELECT count (Evento.idEvento)
-  FROM Evento LEFT OUTER JOIN Amarelo
-  ON (Evento.idEvento = Amarelo.idEvento)
-  LEFT OUTER JOIN Vermelho
-  ON (Evento.idEvento = Vermelho.idEvento)
-  LEFT OUTER JOIN Golo
-  ON (Evento.idEvento = Golo.idEvento)
-  WHERE (Evento.idEvento = new.idEvento))>=1)
-  THEN RAISE(ABORT, 'Um evento só pode ser referenciado uma vez')
+  SELECT CASE
   WHEN (
-    ((SELECT count (Jogador.idPessoa)
+    (SELECT count (Evento.idEvento)
+    FROM Evento LEFT OUTER JOIN Amarelo
+    ON (Evento.idEvento = Amarelo.idEvento)
+    LEFT OUTER JOIN Vermelho
+    ON (Evento.idEvento = Vermelho.idEvento)
+    LEFT OUTER JOIN Golo
+    ON (Evento.idEvento = Golo.idEvento)
+    WHERE (Evento.idEvento = new.idEvento))>=1)
+    THEN RAISE(ABORT, 'Um evento só pode ser referenciado uma vez')
+  WHEN (SELECT count (Jogador.idPessoa)
     FROM Amarelo INNER JOIN Evento
     ON (Amarelo.idEvento = Evento.idEvento)
     INNER JOIN Jogo
-    ON ((SELECT Jogo.idJogo
-      FROM Evento INNER JOIN Jogo
-      ON (new.idEvento = Evento.idEvento AND Evento.idJogo = Jogo.idJogo))=Jogo.idJogo)
-      INNER JOIN Jogador
-      ON ((SELECT Jogo.idJogo
-      FROM Evento INNER JOIN Jogador
-      ON (new.idEvento = Evento.idEvento AND Evento.idJogador = Jogador.idPessoa))=Jogador.idPessoa)
-      GROUP BY (Jogador.idPessoa))>=1)
-      OR
-      ((SELECT count (Jogador.idPessoa)
+    ON ((SELECT count (Jogador.idPessoa)
       FROM Vermelho INNER JOIN Evento
       ON (Vermelho.idEvento = Evento.idEvento)
       INNER JOIN Jogo
@@ -46,37 +36,37 @@ WHEN (
 END;
 
 
-            CREATE TRIGGER IF NOT EXISTS Amarelo_To_Vermelho
-            BEFORE INSERT ON Amarelo
-            FOR EACH ROW --Already default
-            WHEN (((SELECT count (Jogador.idPessoa)
-            FROM Amarelo INNER JOIN Evento
-            ON (Amarelo.idEvento = Evento.idEvento)
-            INNER JOIN Jogo
-            ON ((SELECT Jogo.idJogo
-              FROM Evento INNER JOIN Jogo
-              ON (new.idEvento = Evento.idEvento AND Evento.idJogo = Jogo.idJogo))=Jogo.idJogo)
-              INNER JOIN Jogador
-              ON ((SELECT Jogo.idJogo
-                FROM Evento INNER JOIN Jogador
-                ON (new.idEvento = Evento.idEvento AND Evento.idJogador = Jogador.idPessoa))=Jogador.idPessoa)
-                GROUP BY (Jogador.idPessoa))>=1)
-                OR
-                ((SELECT count (Jogador.idPessoa)
-                FROM Vermelho INNER JOIN Evento
-                ON (Vermelho.idEvento = Evento.idEvento)
-                INNER JOIN Jogo
-                ON ((SELECT Jogo.idJogo
-                  FROM Evento INNER JOIN Jogo
-                  ON (new.idEvento = Evento.idEvento AND Evento.idJogo = Jogo.idJogo))=Jogo.idJogo)
-                  INNER JOIN Jogador
-                  ON ((SELECT Jogo.idJogo
-                    FROM Evento INNER JOIN Jogador
-                    ON (new.idEvento = Evento.idEvento AND Evento.idJogador = Jogador.idPessoa))=Jogador.idPessoa)
-                    GROUP BY (Jogador.idPessoa))=0))
-                    BEGIN
-                    INSERT INTO Vermelho values (new.idEvento);
-                    END;
+CREATE TRIGGER IF NOT EXISTS Amarelo_To_Vermelho
+BEFORE INSERT ON Amarelo
+FOR EACH ROW --Already default
+WHEN (((SELECT count (Jogador.idPessoa)
+  FROM Amarelo INNER JOIN Evento
+  ON (Amarelo.idEvento = Evento.idEvento)
+  INNER JOIN Jogo
+  ON ((SELECT Jogo.idJogo
+  FROM Evento INNER JOIN Jogo
+  ON (new.idEvento = Evento.idEvento AND Evento.idJogo = Jogo.idJogo))=Jogo.idJogo)
+  INNER JOIN Jogador
+  ON ((SELECT Jogo.idJogo
+    FROM Evento INNER JOIN Jogador
+    ON (new.idEvento = Evento.idEvento AND Evento.idJogador = Jogador.idPessoa))=Jogador.idPessoa)
+    GROUP BY (Jogador.idPessoa))>=1)
+    AND
+    ((SELECT count (Jogador.idPessoa)
+    FROM Vermelho INNER JOIN Evento
+    ON (Vermelho.idEvento = Evento.idEvento)
+    INNER JOIN Jogo
+    ON ((SELECT Jogo.idJogo
+    FROM Evento INNER JOIN Jogo
+    ON (new.idEvento = Evento.idEvento AND Evento.idJogo = Jogo.idJogo))=Jogo.idJogo)
+    INNER JOIN Jogador
+    ON ((SELECT Jogo.idJogo
+    FROM Evento INNER JOIN Jogador
+    ON (new.idEvento = Evento.idEvento AND Evento.idJogador = Jogador.idPessoa))=Jogador.idPessoa)
+    GROUP BY (Jogador.idPessoa))=0)>=1)
+BEGIN
+  INSERT INTO Vermelho values (new.idEvento);
+END;
 
 
 
