@@ -4,6 +4,7 @@
 
 .width 15 15
 /*INTERROGACAO 4 - Equipa menos golos sofridos na Epoca 2016/2017 da liga*/
+--Sabemos que o idEpoca = 1
 
 /*
 --Numero de golos sofridos em casa

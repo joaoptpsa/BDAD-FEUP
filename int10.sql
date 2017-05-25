@@ -3,29 +3,37 @@
 .nullvalue NULL
 
 .width 20 10
-/*INTERROGACAO 10 - Jogadores com mais cartoes*/
+/*INTERROGACAO 10 - Jogadores com mais cartoes Epoca 2016/2017*/
 
 /*
 --Amarelos
-SELECT Pessoa.nome, count(Pessoa.nome)
+SELECT Pessoa.idPessoa as id, count(Pessoa.nome) as num
 FROM Amarelo INNER JOIN Evento
 ON Amarelo.idEvento = Evento.idEvento
 INNER JOIN Jogador
 ON Jogador.idPessoa = Evento.idJogador
 INNER JOIN Pessoa
 ON Pessoa.idPessoa=Jogador.idPessoa
+INNER JOIN Jogo
+ON Evento.idJogo = Jogo.idJogo
+INNER JOIN Jornada
+ON ((Jornada.idEpoca=1) AND (Jogo.idJornada=Jornada.idJornada))
 GROUP BY Pessoa.nome;
 */
 
 /*
 --Vermelhos
-SELECT Pessoa.nome, count(Pessoa.nome)
+SELECT Pessoa.idPessoa as id, count(Pessoa.nome) as num
 FROM Vermelho INNER JOIN Evento
 ON Vermelho.idEvento = Evento.idEvento
 INNER JOIN Jogador
 ON Jogador.idPessoa = Evento.idJogador
 INNER JOIN Pessoa
 ON Pessoa.idPessoa=Jogador.idPessoa
+INNER JOIN Jogo
+ON Evento.idJogo = Jogo.idJogo
+INNER JOIN Jornada
+ON ((Jornada.idEpoca=1) AND (Jogo.idJornada=Jornada.idJornada))
 GROUP BY Pessoa.nome;
 */
 
@@ -43,22 +51,30 @@ ELSE
 0
 END Vermelhos
 FROM Jogador, Pessoa,
-(SELECT Pessoa.idPessoa as id, count (Pessoa.idPessoa) as num
+(SELECT Pessoa.idPessoa as id, count(Pessoa.nome) as num
   FROM Amarelo INNER JOIN Evento
   ON Amarelo.idEvento = Evento.idEvento
   INNER JOIN Jogador
   ON Jogador.idPessoa = Evento.idJogador
   INNER JOIN Pessoa
   ON Pessoa.idPessoa=Jogador.idPessoa
-  GROUP BY Pessoa.idPessoa) Amarelos,
-(SELECT Pessoa.idPessoa as id, count (Pessoa.idPessoa) as num
+  INNER JOIN Jogo
+  ON Evento.idJogo = Jogo.idJogo
+  INNER JOIN Jornada
+  ON ((Jornada.idEpoca=1) AND (Jogo.idJornada=Jornada.idJornada))
+  GROUP BY Pessoa.nome) Amarelos,
+(SELECT Pessoa.idPessoa as id, count(Pessoa.nome) as num
   FROM Vermelho INNER JOIN Evento
   ON Vermelho.idEvento = Evento.idEvento
   INNER JOIN Jogador
   ON Jogador.idPessoa = Evento.idJogador
   INNER JOIN Pessoa
   ON Pessoa.idPessoa=Jogador.idPessoa
-  GROUP BY Pessoa.idPessoa) Vermelhos
+  INNER JOIN Jogo
+  ON Evento.idJogo = Jogo.idJogo
+  INNER JOIN Jornada
+  ON ((Jornada.idEpoca=1) AND (Jogo.idJornada=Jornada.idJornada))
+  GROUP BY Pessoa.nome) Vermelhos
 WHERE (Jogador.idPessoa=Pessoa.idPessoa AND (Jogador.idPessoa = Amarelos.id OR Jogador.idPessoa = Vermelhos.id))
 GROUP BY Pessoa.idPessoa
 ORDER BY Vermelhos.num DESC;
