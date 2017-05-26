@@ -36,6 +36,18 @@ def get_people_links(team_links):
     return people_links
 
 
+def get_venue_links(team_links):
+    venue_links = []
+    for team_link in team_links:
+        team_page = session.get(team_link)
+        team_html = bs4.BeautifulSoup(team_page.text, 'lxml')
+        venue_link = team_html.select('#page_team_1_block_team_venue_4-wrapper a')[0]['href']
+        venue_link_list = [website, venue_link]
+        venue_link = ''.join(venue_link_list)
+        venue_links.append(venue_link)
+    return venue_links
+
+
 def fix_country(country_name):
     if country_name == 'Netherlands':
         country_name = 'The Netherlands'
@@ -215,8 +227,45 @@ def get_people_data(people_links):
         person_html = bs4.BeautifulSoup(person_page.text, 'lxml')
         person_infos = person_html.select('#page_player_1_block_player_passport_3 dt')
         person = parse_person_info(person_infos)
+        people_data.append(person)
 
     return people_data
+
+
+def get_stadia_data(venue_links):
+    stadia_data = []
+
+    for venue_link in venue_links:
+        name = ''
+        opening_year = ''
+        address = ''
+        capacity = ''
+        city = ''
+        stadium = {}
+        venue_page = session.get(venue_link)
+        venue_html = bs4.BeautifulSoup(venue_page.text, 'lxml')
+        venue_infos = venue_html.select('#page_team_1_block_venue_info_3-wrapper dt')
+        name = venue_html.select_one('#page_team_1_block_venue_info_3-wrapper h2').getText().strip()
+        for info in venue_infos:
+            info_name = info.getText().strip()
+            if info_name == 'Address:':
+                address = info.find_next_sibling('dd').getText().strip()
+            if info_name == 'City:':
+                city = info.find_next_sibling('dd').getText().strip()
+            if info_name == 'Opened:':
+                opening_year = info.find_next_sibling('dd').getText().strip()
+            if info_name == 'Capacity:':
+                capacity = info.find_next_sibling('dd').getText().strip()
+
+        stadium['name'] = name
+        stadium['opening_year'] = opening_year
+        stadium['address'] = address
+        stadium['capacity'] = capacity
+        stadium['city'] = city
+        stadia_data.append(stadium)
+
+    return stadia_data
+
 
 
 countries = []
@@ -236,15 +285,20 @@ staffInstructions = []
 playersData = {}
 staffData = {}
 refereesData = {}
-stadiaData = {}
+
 teamsData = {}
 gameData = {}
 
 teamLinks = get_team_links()
 print('Fetched team links')
 
+venueLinks = get_venue_links(teamLinks)
+print('Fetched venue links')
+
 peopleLinks = get_people_links(teamLinks)
 print('Fetched people links')
 
 # cities = get_cities(teamLinks, peopleLinks)
-peopleData = get_people_data(peopleLinks)
+# peopleData = get_people_data(peopleLinks)
+
+stadiaData = get_stadia_data(venueLinks)
