@@ -1,4 +1,4 @@
-/* Dentro da relacao Convocado, para o mesmo idJogo so podem haver 36 tuplos, 18 para cada idEquipa - para implementar falta povoar os contratos*/
+/*Impede durante a adição de um tuplo à relação Amarelo que o mesmo evento seja referenciado por mais do que um acontecimento.*/
 CREATE TRIGGER IF NOT EXISTS Amarelo_Event_Refences_Limit
 BEFORE INSERT ON Amarelo
 FOR EACH ROW
@@ -38,6 +38,7 @@ ON (Evento.idEvento=Golo.idEvento AND Evento.idEvento=new.idEvento)
 GROUP BY Evento.idEvento
 */
 
+/*Impede a adição de mais tuplos à relação Amarelo caso o jogador já tenha sido expulso no jogo que este acontecimento referencia*/
 CREATE TRIGGER IF NOT EXISTS Amarelo_Already_Expelled
 BEFORE INSERT ON Amarelo
 FOR EACH ROW
