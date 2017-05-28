@@ -2,11 +2,12 @@
 .headers on
 .nullvalue NULL
 
+.width 25 10
 /*INTERROGACAO 6 - Classificacao Epoca 2016/2017*/
 --Sabemos que o idEpoca = 1
 
 SELECT Equipa.nome, sum (
-CASE 
+CASE
 WHEN ((Jogo.idEquipaCasa=Equipa.idEquipa) AND (Jogo.golosCasa-Jogo.golosFora)>0)
 THEN 3
 WHEN ((Jogo.idEquipaCasa=Equipa.idEquipa) AND (Jogo.golosCasa-Jogo.golosFora)=0)
