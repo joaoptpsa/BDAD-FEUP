@@ -2875,31 +2875,146 @@ insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (56
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (54, 9, 63, NULL);
 
 --Evento
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (1, 25, 12, 120, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (2, 74, 12, 120, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (3, 76, 12, 246, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (4, 80, 12, 246, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (5, 71, 12, 264, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (6, 6, 4, 256, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (7, 65, 4, 256, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (8, 69, 4, 256, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (9, 90, 4, 418, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (10, 91, 4, 4, 1);
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (11, 45, 4, 400, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (1, 9, 1, 15, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (2, 13, 1, 25, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (3, 46, 1, 25, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (4, 66, 1, 8, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (5, 73, 1, 11, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (6, 77, 1, 25, 1);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (7, 87, 8, 214, 1);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (8, 11, 5, 129, 2);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (9, 19, 5, 123, 2);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (10, 27, 18, 532, 2);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (11, 39, 18, 537, 2);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (12, 47, 18, 535, 2);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (13, 61, 5, 141, 2);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (14, 81, 5, 133, 2);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (15, 91, 5, 138, 2);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (16, 13, 15, 439, 3);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (17, 17, 3, 87, 3);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (18, 44, 15, 453, 3);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (19, 88, 15, 459, 3);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (20, 89, 3, 87, 3);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (21, 92, 15, 455, 3);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (22, 7, 17, 505, 4);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (23, 30, 14, 425, 4);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (24, 32, 14, 409, 4);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (25, 32, 17, 509, 4);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (26, 79, 17, 523, 4);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (27, 89, 14, 404, 4);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (28, 66, 13, 388, 5);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (29, 62, 16, 469, 5);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (30, 89, 16, 474, 5);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (31, 31, 16, 482, 5);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (32, 35, 16, 481, 5);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (33, 87, 11, 309, 6);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (34, 79, 11, 313, 6);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (35, 88, 11, 330, 6);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (36, 13, 11, 333, 6);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (37, 67, 10, 290, 6);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (38, 89, 10, 288, 6);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (39, 41, 9, 251, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (40, 85, 9, 266, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (41, 74, 9, 266, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (42, 45, 9, 267, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (43, 94, 9, 239, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (44, 64, 12, 347, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (45, 75, 12, 346, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (46, 74, 12, 355, 7);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (47, 79, 12, 363, 7);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (48, 62, 6, 159, 8);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (49, 94, 6, 172, 8);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (50, 34, 7, 182, 8);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (51, 92, 7, 196, 8);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (52, 97, 7, 196, 8);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (53, 83, 7, 198, 8);
+
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (54, 51, 4, 94, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (55, 22, 4, 107, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (56, 55, 4, 101, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (57, 83, 4, 111, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (58, 20, 2, 35, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (59, 54, 2, 41, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (60, 74, 2, 48, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (61, 79, 2, 52, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (62, 58, 2, 50, 9);
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (63, 90, 2, 46, 9);
 
 --Golo
 insert into Golo (idEvento) values (1);
 insert into Golo (idEvento) values (2);
 insert into Golo (idEvento) values (3);
 insert into Golo (idEvento) values (4);
+insert into Golo (idEvento) values (5);
 insert into Golo (idEvento) values (6);
-insert into Golo (idEvento) values (7);
 insert into Golo (idEvento) values (8);
-insert into Golo (idEvento) values (9);
+insert into Golo (idEvento) values (13);
+insert into Golo (idEvento) values (17);
+insert into Golo (idEvento) values (20);
+insert into Golo (idEvento) values (23);
+insert into Golo (idEvento) values (26);
+insert into Golo (idEvento) values (30);
+insert into Golo (idEvento) values (32);
+insert into Golo (idEvento) values (36);
+insert into Golo (idEvento) values (40);
+insert into Golo (idEvento) values (42);
+insert into Golo (idEvento) values (47);
+insert into Golo (idEvento) values (48);
+insert into Golo (idEvento) values (49);
+insert into Golo (idEvento) values (51);
+insert into Golo (idEvento) values (56);
+insert into Golo (idEvento) values (57);
+insert into Golo (idEvento) values (62);
+insert into Golo (idEvento) values (63);
+
 
 --Amarelo
-insert into Amarelo (idEvento) values (5);
+insert into Amarelo (idEvento) values (7);
+insert into Amarelo (idEvento) values (9);
+insert into Amarelo (idEvento) values (10);
+insert into Amarelo (idEvento) values (11);
+insert into Amarelo (idEvento) values (12);
+insert into Amarelo (idEvento) values (14);
+insert into Amarelo (idEvento) values (15);
+insert into Amarelo (idEvento) values (16);
+insert into Amarelo (idEvento) values (18);
+insert into Amarelo (idEvento) values (19);
+insert into Amarelo (idEvento) values (21);
+insert into Amarelo (idEvento) values (22);
+insert into Amarelo (idEvento) values (24);
+insert into Amarelo (idEvento) values (25);
+insert into Amarelo (idEvento) values (27);
+insert into Amarelo (idEvento) values (28);
+insert into Amarelo (idEvento) values (29);
+insert into Amarelo (idEvento) values (31);
+insert into Amarelo (idEvento) values (32);
+insert into Amarelo (idEvento) values (33);
+insert into Amarelo (idEvento) values (35);
+insert into Amarelo (idEvento) values (37);
+insert into Amarelo (idEvento) values (38);
+insert into Amarelo (idEvento) values (39);
+insert into Amarelo (idEvento) values (41);
+insert into Amarelo (idEvento) values (43);
+insert into Amarelo (idEvento) values (44);
+insert into Amarelo (idEvento) values (45);
+insert into Amarelo (idEvento) values (46);
+insert into Amarelo (idEvento) values (50);
+insert into Amarelo (idEvento) values (52);
+insert into Amarelo (idEvento) values (53);
+insert into Amarelo (idEvento) values (54);
+insert into Amarelo (idEvento) values (55);
+insert into Amarelo (idEvento) values (58);
+insert into Amarelo (idEvento) values (59);
+insert into Amarelo (idEvento) values (60);
+insert into Amarelo (idEvento) values (61);
+
 
 --Vermelho
-insert into Vermelho (idEvento) values (10);
-insert into Vermelho (idEvento) values (11);
+insert into Vermelho (idEvento) values (34);
