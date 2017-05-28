@@ -1,5 +1,6 @@
+--Amarelo_Event_Refences_Limit
 INSERT INTO Amarelo values (5); --Rejeitado por ja haver algum evento com esse idEvento
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (12, 60, 4, 264, 1); -- segundo amarelo
-insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (13, 64, 4, 264, 1);
-INSERT INTO Vermelho values (12);
-INSERT INTO Amarelo values (13);
+
+--Verifica Amarelo_Already_Expelled
+insert into Evento (idEvento, minuto, idEquipa, idJogador, idJogo) values (12, 91, 4, 4, 1); --Amarelo depois de ser expulso
+INSERT INTO Amarelo values (12);
