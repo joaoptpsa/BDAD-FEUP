@@ -2,7 +2,7 @@
 .headers on
 .nullvalue NULL
 
-.width 20 6
+.width 30 6
 /*INTERROGACAO 2 - Melhores marcardores*/
 
 SELECT Pessoa.nome, count(Pessoa.nome) as num

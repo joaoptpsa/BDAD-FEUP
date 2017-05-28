@@ -2,7 +2,7 @@
 .headers on
 .nullvalue NULL
 
-.width 20 10
+.width 25 10
 /*INTERROGACAO 9 - Média de Idades por Equipa nos jogadores das equipas vinculados no dia 02/04/2017*/
 
 

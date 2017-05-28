@@ -2,7 +2,7 @@
 .headers on
 .nullvalue NULL
 
-.width 20 6
+.width 30 6
 /*INTERROGACAO 1 - Top jogadores mais altos*/
 
 SELECT Pessoa.nome as Nome_Jogador, Pessoa.altura

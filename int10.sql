@@ -2,7 +2,7 @@
 .headers on
 .nullvalue NULL
 
-.width 20 10
+.width 30 10
 /*INTERROGACAO 10 - Jogadores com mais cartoes Epoca 2016/2017*/
 
 /*
