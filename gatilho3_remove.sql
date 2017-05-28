@@ -1,1 +1,1 @@
-DROP TRIGGER IF EXISTS Pessoa_Trigger;
+  DROP TRIGGER IF EXISTS Pessoa_Trigger;

@@ -107,8 +107,8 @@ CREATE TABLE Contrato (
 );
 
 CREATE TABLE ContratoStaff (
-	idContrato		INTEGER		PRIMARY KEY,
-	idStaff			INTEGER		NOT NULL,
+	idContrato		INTEGER,
+	idStaff			INTEGER		NOT NULL PRIMARY KEY,
 	idEquipa 		INTEGER		NOT NULL,
 	idFuncao		INTEGER		NOT NULL,
 		FOREIGN KEY (idContrato) REFERENCES Contrato,
@@ -118,8 +118,8 @@ CREATE TABLE ContratoStaff (
 );
 
 CREATE TABLE ContratoJogador (
-	idContrato		INTEGER		PRIMARY KEY,
-	idJogador		INTEGER		NOT NULL,
+	idContrato		INTEGER		,
+	idJogador		INTEGER		NOT NULL  PRIMARY KEY,
 	idEquipa 		INTEGER		NOT NULL,
 		FOREIGN KEY (idContrato) REFERENCES Contrato,
 		FOREIGN KEY (idJogador) REFERENCES Jogador,

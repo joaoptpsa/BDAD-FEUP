@@ -2502,7 +2502,7 @@ insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (18
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (10, 1, 0, NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (27, 1, 0, NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (25, 1, 0, NULL);
-insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (28, 1, 0, NULL);
+insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (11, 1, 0, NULL);
 
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (3, 1, NULL, NULL);
 insert into Convocado (idJogador, idJogo, minutoEntrada, minutoSaida) values (16, 1, 74, NULL);

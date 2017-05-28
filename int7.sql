@@ -8,5 +8,5 @@
 SELECT Pessoa.nome, Jogador.pePref
 FROM Jogador INNER JOIN Pessoa
 ON Jogador.idPessoa=Pessoa.idPessoa
-WHERE (Jogador.posicaoPref = 'Avançado')
+WHERE (Jogador.posicaoPref = 'Avancado')
 ORDER BY Jogador.pePref DESC;
